@@ -1,0 +1,20 @@
+<section>
+    <div class="container-fluid">
+        <div class="gallary-header">
+            <h1>Gallery</h1>
+            <p>Our team, see our events and activities with our clients and partners.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4" *ngFor="let i of gallary  | paginate: { itemsPerPage: 9, currentPage: p }">
+                <div class="image">
+                    <img (click)="text()" src="{{i}}" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+        </div>
+    </div>
+</section>

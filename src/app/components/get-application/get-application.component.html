@@ -1,0 +1,497 @@
+<section [dir]="(_LangService.direction$ | async)">
+    <div class="Basic_Info" *ngIf="Basic_Info">
+        <div class="row">
+            <div class="Basic_Info_head">
+                <h2>{{'contactHome.application_head' | translate}}</h2>
+                <p>{{'contactHome.application_caption' | translate}}</p>
+            </div>
+            <div class="col-lg-12">
+                <div class="position-relative {{'contactHome.name-field.class'  | translate}}">
+                    <img class="inputimg" src="../../../assets/images/name-icon.svg" alt="">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"contactHome.name-field.name" | translate}}</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="position-relative {{'contactHome.email-field.class'  | translate}}">
+                    <img class="inputimg" src="../../../assets/images/carbon_email-new.svg" alt="">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{"contactHome.email-field.name" | translate}}</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="position-relative {{'contactHome.phone-field.class'  | translate}}">
+                    <img class="inputimg" src="../../../assets/images/phone-icon.svg" alt="">
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{'contactHome.phone-field.name' | translate}}</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="position-relative {{'contactHome.country-field.class'  | translate}}">
+                            <mat-form-field>
+                                <img class="inputimg" src="../../../assets/images/flag.svg" alt="">
+
+                                <!-- <mat-label>Favorite food</mat-label> -->
+                                <mat-select placeholder="{{'contactHome.country-field.name'  | translate}}">
+                                    <mat-option *ngFor="let food of foods ; let track = index"
+                                        [value]="food.value">{{food.viewValue}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative {{'contactHome.city-field.class'  | translate}}">
+                            <img class="inputimg" src="../../../assets/images/city-icon.svg" alt="">
+                            <mat-form-field>
+                                <!-- <mat-label>Favorite food</mat-label> -->
+                                <mat-select placeholder="{{'contactHome.city-field.name'  | translate}}">
+                                    <mat-option *ngFor="let food of foods ; let track = index"
+                                        [value]="food.value">{{food.viewValue}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="position-relative {{'contactHome.Current-Address-field.class' | translate}}">
+                    <img class="inputimg" src="../../../assets/images/addres.svg" alt="">
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{'contactHome.Current-Address-field.name' | translate}}</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="{{'contactHome.Postal-Code-field.class' | translate}}">
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{'contactHome.Postal-Code-field.name' | translate}}</mat-label>
+                        <input matInput placeholder="{{'contactHome.Postal-Code-field.name' | translate}}">
+                    </mat-form-field>
+                </div>
+
+                <div class="application-btn">
+                    <button (click)="Basic_Info_next()" class="next">{{'applicationApply.next' |
+                        translate}}</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="want-to-apply" *ngIf="want_to_apply">
+        <div class="want-to-apply-head">
+            <h2>{{'applicationApply.head' | translate}}</h2>
+            <p>{{'applicationApply.caption' | translate}}</p>
+        </div>
+        <div class="language_school">
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.want-to-apply.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option (click)="applyOptions($event)" id="1" value="Language Course">{{'applicationApply.want-to-apply.Language-Course' | translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="2" value="Foundation Course">{{'applicationApply.want-to-apply.Foundation-Course' | translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="3" value="Bachelor Degree">{{'applicationApply.want-to-apply.Bachelor-Degree' | translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="4" value="Master Degree">{{'applicationApply.want-to-apply.Master-Degree' | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="application-btn d-flex align-items-end justify-content-end">
+                <button (click)="want_to_apply_back()" class="back">{{'applicationApply.back' | translate}}</button>
+                <button (click)="applyNext()" class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                    translate}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="Language_Course" *ngIf="Language_Course">
+        <div class="Language_Course_head">
+            <h2>{{'applicationApply.Language-Course.head'  | translate}}</h2>
+            <p>{{'applicationApply.Language-Course.caption'  | translate}}</p>
+        </div>
+        <div class="Language_Course_form">
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.startcourse'  | translate}}</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.weeks'  | translate}}</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.hourperweek.label'  | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option value="15">15</mat-option>
+                        <mat-option value="20">20</mat-option>
+                        <mat-option value="25">25</mat-option>
+                        <mat-option value="30">30</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.accommodation.label'  | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.one'  | translate}}</mat-option>
+                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.two'  | translate}}</mat-option>
+                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.three'  | translate}}</mat-option>
+                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.four'  | translate}}</mat-option>
+                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.five'  | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label'  | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option (click)="airportTransfaer($event)" id="1" value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2" value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="trasferWayes">
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label'  | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}</mat-option>
+                        <mat-option value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <mat-label>{{'applicationApply.Language-Course.arrival-airport'  | translate}}</mat-label>
+                <input matInput>
+              </mat-form-field>
+            <div>
+            </div>
+            <div class="application-btn d-flex align-items-end justify-content-end">
+                <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
+                <button (click)="applyNext()" class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                    translate}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="Foundation_Course" *ngIf="Foundation_Course">
+        <div class="Foundation_Course_head">
+            <h2>Foundation Course</h2>
+            <p>Please, complete the following inquiries.</p>
+        </div>
+        <div class="Foundation_Course_form">
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.startcourse'  | translate}}</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.weeks'  | translate}}</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>How many terms you would like to take your Foundaion ?</mat-label>
+                    <mat-select>
+                        <mat-option id="1"  value="2 Terms">2 Terms</mat-option>
+                        <mat-option id="2" value="2.5 Terms ">2.5 Terms</mat-option>
+                        <mat-option id="3"  value="3 Terms ">3 Terms</mat-option>
+                        <mat-option id="4" value="3.5 Terms  ">3.5 Terms</mat-option>
+                        <mat-option id="5"  value="4 Terms ">4 Terms</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Do you currently have an IELTS Certificate ?</mat-label>
+                    <mat-select>
+                        <mat-option (click)='IELTSCertifcate($event)' id="1"  value="yes ">yes</mat-option>
+                        <mat-option (click)='IELTSCertifcate($event)' id="2" value="no ">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="IELTSNo">
+                <mat-form-field>
+                    <mat-label>If it is NOT IELTS ، please mention the English Certifcate you have hold and scores ?</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+            </div>
+            <div *ngIf="IELTSScores">
+                <mat-form-field>
+                    <mat-label>what is your Scores please ?</mat-label>
+                    <mat-select>
+                        <mat-option id="1"  value="Overall">Overall</mat-option>
+                        <mat-option id="2" value="Writing">Writing </mat-option>
+                        <mat-option id="3"  value="Reading">Reading </mat-option>
+                        <mat-option id="4" value="Speaking">Speaking </mat-option>
+                        <mat-option id="5"  value="Listening">Listening  </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Have you graduated from high school ?</mat-label>
+                    <mat-select>
+                        <mat-option  id="1"  value="yes ">yes</mat-option>
+                        <mat-option  id="2" value="no ">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Would like to book university accommodation with your foundation Studies ?</mat-label>
+                    <mat-select>
+                        <mat-option  id="1"  value="yes ">yes</mat-option>
+                        <mat-option  id="2" value="no ">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Would you like to have airport transfer ?</mat-label>
+                    <mat-select>
+                        <mat-option (click)="airportTransfaer($event)" id="1" value="yes">yes</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2" value="no">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="trasferWayes">
+                <mat-form-field>
+                    <mat-label>would like one way or two way transfer  ?</mat-label>
+                    <mat-select>
+                        <mat-option value="Oneway">Oneway</mat-option>
+                        <mat-option value="Both ways">Both ways</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <mat-label> Name of arrival Airport ?</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <div class="application-btn d-flex align-items-end justify-content-end">
+                <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
+                <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                    translate}}</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="Bachelor_Degree" *ngIf="Bachelor_Degree">
+        <div class="Bachelor_Degree_head">
+            <h2>Bachelor Degree</h2>
+            <p>Please, complete the following inquiries.</p>
+        </div>
+        <div class="Bachelor_Degree_form">
+<div>
+    <mat-form-field>
+        <mat-label>What is the name of the degree you would like to Study ?</mat-label>
+        <input matInput>
+      </mat-form-field>
+</div>
+<div>
+    <mat-form-field>
+        <mat-label>When you would like to start your course ?</mat-label>
+        <mat-select>
+            <mat-option   value="January">January</mat-option>
+            <mat-option  value="September">September</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+<div>
+    <mat-form-field>
+        <mat-label>What level of study have you completed or currently studding?</mat-label>
+        <mat-select>
+            <mat-option   value="Foundation ">Foundation </mat-option>
+            <mat-option  value="Diploma ">Diploma </mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+<div>
+    <mat-form-field>
+        <mat-label>Do you currently have an IELTS Certificate ?</mat-label>
+        <mat-select>
+            <mat-option (click)='IELTSCertifcate($event)' id="1"  value="yes ">yes</mat-option>
+            <mat-option (click)='IELTSCertifcate($event)' id="2" value="no ">no</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+<div *ngIf="IELTSNo">
+    <mat-form-field>
+        <mat-label>If it is NOT IELTS ، please mention the English Certifcate you have hold and scores ?</mat-label>
+        <input matInput>
+      </mat-form-field>
+</div>
+<div *ngIf="IELTSScores">
+    <mat-form-field>
+        <mat-label>what is your Scores please ?</mat-label>
+        <mat-select>
+            <mat-option id="1"  value="Overall">Overall</mat-option>
+            <mat-option id="2" value="Writing">Writing </mat-option>
+            <mat-option id="3"  value="Reading">Reading </mat-option>
+            <mat-option id="4" value="Speaking">Speaking </mat-option>
+            <mat-option id="5"  value="Listening">Listening  </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div>
+    <mat-form-field>
+        <mat-label>Would like to book university accommodation with your foundation Studies ?</mat-label>
+        <mat-select>
+            <mat-option  id="1"  value="yes ">yes</mat-option>
+            <mat-option  id="2" value="no ">no</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+<div>
+    <mat-form-field>
+        <mat-label>Would you like to have airport transfer ?</mat-label>
+        <mat-select>
+            <mat-option (click)="airportTransfaer($event)" id="1" value="yes">yes</mat-option>
+            <mat-option (click)="airportTransfaer($event)" id="2" value="no">no</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+<div *ngIf="trasferWayes">
+    <mat-form-field>
+        <mat-label>would like one way or two way transfer  ?</mat-label>
+        <mat-select>
+            <mat-option value="Oneway">Oneway</mat-option>
+            <mat-option value="Both ways">Both ways</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<mat-form-field>
+    <mat-label> Name of arrival Airport ?</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <div class="application-btn d-flex align-items-end justify-content-end">
+    <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
+    <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+        translate}}</button>
+</div>
+        </div>
+    </div>
+    <div class="Master_Degree" *ngIf="Master_Degree">
+        <div class="Master_Degree_head">
+            <h2>Master Degree</h2>
+            <p>Please, complete the following inquiries.</p>
+        </div>
+        <div class="Master_Degree_form">
+            <div>
+                <mat-form-field>
+                    <mat-label>What is the name of the degree you would like to Study ?</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>When you would like to start your course ?</mat-label>
+                    <mat-select>
+                        <mat-option   value="January">January</mat-option>
+                        <mat-option  value="September">September</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Have you completed your bachelor degree ?</mat-label>
+                    <mat-select>
+                        <mat-option   value="yes">yes</mat-option>
+                        <mat-option  value="no">no</mat-option>
+                        <mat-option  value="Currently studding ">Currently studding </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Do you currently have an IELTS Certificate ?</mat-label>
+                    <mat-select>
+                        <mat-option (click)='IELTSCertifcate($event)' id="1"  value="yes ">yes</mat-option>
+                        <mat-option (click)='IELTSCertifcate($event)' id="2" value="no ">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="IELTSNo">
+                <mat-form-field>
+                    <mat-label>If it is NOT IELTS ، please mention the English Certifcate you have hold and scores ?</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+            </div>
+            <div *ngIf="IELTSScores">
+                <mat-form-field>
+                    <mat-label>what is your Scores please ?</mat-label>
+                    <mat-select>
+                        <mat-option id="1"  value="Overall">Overall</mat-option>
+                        <mat-option id="2" value="Writing">Writing </mat-option>
+                        <mat-option id="3"  value="Reading">Reading </mat-option>
+                        <mat-option id="4" value="Speaking">Speaking </mat-option>
+                        <mat-option id="5"  value="Listening">Listening  </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Would like to book university accommodation with your foundation Studies ?</mat-label>
+                    <mat-select>
+                        <mat-option  id="1"  value="yes ">yes</mat-option>
+                        <mat-option  id="2" value="no ">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>Would you like to have airport transfer ?</mat-label>
+                    <mat-select>
+                        <mat-option (click)="airportTransfaer($event)" id="1" value="yes">yes</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2" value="no">no</mat-option>
+            
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="trasferWayes">
+                <mat-form-field>
+                    <mat-label>would like one way or two way transfer  ?</mat-label>
+                    <mat-select>
+                        <mat-option value="Oneway">Oneway</mat-option>
+                        <mat-option value="Both ways">Both ways</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <mat-label> Name of arrival Airport ?</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <div class="application-btn d-flex align-items-end justify-content-end">
+                <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
+                <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                    translate}}</button>
+            </div>
+
+        </div>
+
+    </div>
+</section>

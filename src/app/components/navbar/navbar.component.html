@@ -1,0 +1,132 @@
+<div class="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img [src]="bindingCheck? '../../../assets/images/logo En Dark.svg':'../../../assets/images/logo Ar White.svg'"
+                        alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a role="button" class="nav-link active" aria-current="page"
+                            (click)="navbarRouting('/home')">{{'navbar.Home'
+                            |
+                            translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'navbar.Services' | translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'navbar.About' | translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'navbar.Contact' | translate}}</a>
+                    </li>
+                </ul>
+                <div class="lang-div d-flex">
+                    <button (click)="navbarRouting('/Get-Application')" class="Get-Application">{{'navbar.Get_Application' | translate}}</button>
+                    <div role="button" class=" {{'navbar.margin-l' | translate}} mt-1 position-relative"
+                        (click)="showDropMenue=!showDropMenue">
+                        <a class="dropdownArrow">
+                            <img src="{{langIcon}}" alt="">
+                            <img class="{{'navbar.margin-l' | translate}} arrow"
+                                [src]="showDropMenue?'../../../assets/images/Arrow down.svg':'../../../assets/images/Vector1.svg'"
+                                alt="">
+                        </a>
+                        <div class="{{'navbar.langDropdown-position' | translate}}" *ngIf="showDropMenue">
+                            <ul class="m-0 py-2">
+                                <li id="{{lang.id}}" *ngFor="let lang of langarray" (click)="toggleLang($event)">
+                                    <img id="{{lang.id}}" src="{{lang.icon}}" alt="">
+                                    <span id="{{lang.id}}" class="ms-2 text-center">{{lang.name}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- 
+    <header class="">
+        <div id="carouselExampleIndicators" class="carousel slide px-4">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row p-0 m-0">
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                            <div class="header-caption">
+                                <h1>Your first choice for education in the UK & worldwide</h1>
+                                <p>Universal Study offers professional education counseling service to Middle Eastern
+                                    and international students applying to study in universities, colleges and Language
+                                    school worldwide.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="header-animation">
+                                <main lottie [options]="options" (animationCreated)="animationCreated($event)"></main>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse assumenda impedit
+                                    incidunt,
+                                    cum repellat velit earum dignissimos, distinctio dolorum quod ipsum minima
+                                    laboriosam
+                                    sint
+                                    ex non aliquid voluptas numquam nobis?</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="header-animation">
+                                <main lottie [options]="options" (animationCreated)="animationCreated($event)"></main>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+
+                <img src="../../../assets/images/prev-arrow.svg" alt="">
+
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <img src="../../../assets/images/next-arrow.svg" alt="">
+
+            </button>
+        </div>
+    </header> -->
+
+
+
+</div>

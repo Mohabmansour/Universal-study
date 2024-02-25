@@ -1,0 +1,6 @@
+<!-- <app-footer class="px-5 footer" ></app-footer> -->
+<app-navbar [dir]="(_LangService.direction$ | async)"></app-navbar>
+
+<router-outlet></router-outlet>
+
+<app-footer [dir]="(_LangService.direction$ | async)"></app-footer>

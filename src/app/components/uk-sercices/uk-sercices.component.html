@@ -1,0 +1,85 @@
+<section>
+    <div class="container-fluid">
+        <div class="{{'services.Services-c' | translate}}">
+            <h2>{{"services.Services" | translate}}</h2>
+        </div>
+        <div class="row gy-3">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="service" (click)="servicesRouting('/Academic-Studies')">
+                    <div>
+                        <img src="../../../assets/images/ser1.svg" alt="">
+                    </div>
+                    <div class="service-caption">
+                        <h4>{{"services.acadimic.header" | translate}}</h4>
+                        <p>{{"services.acadimic.caption" | translate}}</p>
+                    </div>
+                    <div class="learn-more d-flex justify-content-start ">
+                        <button class="{{'services.button-style' | translate}} d-flex
+                            align-items-center"><span>{{"services.acadimic.button" |
+                                translate}}</span>
+                            <img class="{{'services.learn-more-img' | translate}}"
+                                src="../../../assets/images/arrow-r.svg" alt=""> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="service">
+                    <div>
+                        <img src="../../../assets/images/ser2.svg" alt="">
+                    </div>
+                    <div class="service-caption">
+                        <h4>{{"services.short-term.header" | translate}}</h4>
+                        <p>{{"services.short-term.caption" | translate}}</p>
+                    </div>
+                    <div class="learn-more d-flex justify-content-start ">
+
+                        <button (click)="servicesRouting('/Short-term-English')"
+                            class="{{'services.button-style' | translate}} d-flex align-items-center"><span>{{"services.acadimic.button"
+                                |
+                                translate}}</span>
+                            <img class="{{'services.learn-more-img' | translate}}"
+                                src="../../../assets/images/arrow-r.svg" alt=""> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="service">
+                    <div>
+                        <img src="../../../assets/images/ser3.svg" alt="">
+                    </div>
+                    <div class="service-caption">
+                        <h4>{{"services.Accommodation.header" | translate}}</h4>
+                        <p>{{"services.Accommodation.caption" | translate}}</p>
+                    </div>
+                    <div class="learn-more d-flex justify-content-start ">
+                        <button (click)="servicesRouting('/Accommodation')"
+                            class="{{'services.button-style' | translate}} d-flex align-items-center"><span>{{"services.acadimic.button"
+                                |
+                                translate}}</span>
+                            <img class="{{'services.learn-more-img' | translate}}"
+                                src="../../../assets/images/arrow-r.svg" alt=""> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="service">
+                    <div>
+                        <img src="../../../assets/images/ser4.svg" alt="">
+                    </div>
+                    <div class="service-caption">
+                        <h4>{{"services.Welfare-Support.header" | translate}}</h4>
+                        <p>{{"services.Welfare-Support.caption" | translate}}</p>
+                    </div>
+                    <div class="learn-more d-flex justify-content-start ">
+                        <button (click)="servicesRouting('Welfare-Support')"
+                            class="{{'services.button-style' | translate}} d-flex align-items-center"><span>{{"services.acadimic.button"
+                                |
+                                translate}}</span>
+                            <img class="{{'services.learn-more-img' | translate}}"
+                                src="../../../assets/images/arrow-r.svg" alt=""> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

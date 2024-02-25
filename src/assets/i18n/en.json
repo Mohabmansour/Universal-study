@@ -1,0 +1,456 @@
+{
+  "navbar": {
+    "Home": "Home",
+    "Services": "Services",
+    "About": "About",
+    "Contact": "Contact",
+    "Get_Application": "Get Application",
+    "logo": "../../../assets/images/logo En Dark.svg",
+    "margin-l": "ms-2",
+    "langDropdown-position": "drowdown-meneu"
+  },
+  "header": {
+    "head": "Your first choice for education in the <span class='highlight'>Uk</span> <br> & worldwide",
+    "caption": "Universal Study offers professional education counseling service to <br> Middle Eastern and international students applying to study in <br> universities, colleges and Language school worldwide."
+  },
+  "services": {
+    "Services": "Services",
+    "Services-c": "services-caption",
+    "learn-more-img": "learn-more-img",
+    "button-style": "button-style",
+    "acadimic": {
+      "header": "Academic Studies",
+      "caption": "We represent a wide range of Universities and Institutions worldwide.",
+      "button": "Learn More"
+    },
+    "short-term": {
+      "header": "Short-term English",
+      "caption": "Thanks to our wide range of partners, we can answer any type of enquiry."
+    },
+    "Accommodation": {
+      "header": "Accommodation",
+      "caption": "UniversalStudy has linked with numerous letting specialists throughout the country."
+    },
+    "Welfare-Support": {
+      "header": "Welfare Support",
+      "caption": "We provide utmost academic and welfare support for international students already in the UK."
+    }
+  },
+  "aboutUs": {
+    "class": "about-caption",
+    "head": "About Universal Study",
+    "caption1": "UniversalStudy is a professional education counselor for students wanting to pursue higher education worldwide. We represent major colleges/universities and Language school worldwide.",
+    "caption2": "UniversalStudy aims to bridge the gap between International Students and their choice of University. Our Experienced Staff ensure a smooth and informed service during the application and admission process. Constant interaction with our associated institutions both locally and overseas has given Geeta Education a competitive edge in providing our students with up-to-date information and guidance on admissions; VISA documentation, Accommodation, Job prospects, Work placements, Work permits and the Culture/Lifestyle of the country along with advice."
+  },
+  "chooseUs": {
+    "class": "about-caption",
+    "head": "Why Choose Us ?",
+    "caption1": "Over the past years we have been constantly refining our customer service technique to make sure we provide our students with all the information they may need before enrolling for their course.",
+    "caption2": "We have a large network of Universities, colleges and Language schools in the UK, Thanks to our wide range of partners, we can answer any type of enquiry: General English, Business English, Examination courses, English & Leisure activities, Family programmers, Junior holidays, English for doctors, English for teachers, University Courses such as Foundation, Degree, masters or PhD."
+  },
+  "universal": {
+    "class": "universal-header",
+    "header": "Universal Study is different",
+    "Comprehensive": {
+      "head": "Comprehensive",
+      "caption": "UniversalStudy offers fully comprehensive and impartial service to students wanting to study at any institution in the UK or worldwide."
+    },
+    "High-success-rate": {
+      "head": "High success rate",
+      "caption": "With years of expertise in academic and strong connection with our partnered universities, it is no surprise that we maintain a high success rate."
+    },
+    "Friendly-support": {
+      "head": "Friendly support",
+      "caption": "UniversalStudy pride themselves not only with its efficiency but also friendliness, our students are from all over the world therefore we understand."
+    },
+    "Impartial-advice": {
+      "head": "Impartial advice",
+      "caption": "UniversalStudy always maintains neutral and offers the best possible advice for choices of university pertaining to the requirement of students."
+    }
+  },
+  "our-nums": {
+    "title": "Our Numbers ",
+    "class": "num",
+    "Applied": {
+      "numbers": "25K",
+      "student": "Applied Student"
+    },
+    "Success": {
+      "numbers": "12K",
+      "student": "Success Stories"
+    },
+    "Accommodation": {
+      "numbers": "8K",
+      "student": "Accommodation"
+    },
+    "Welfare": {
+      "numbers": "25K",
+      "student": "Welfare Support"
+    }
+  },
+  "Academic-Studies": {
+    "header1": "Our Advisory Service includes:",
+    "header": {
+      "head": "Academic Studies",
+      "caption": "We represent a wide range of Universities and Institutions worldwide. Our students are guaranteed entry into prestigious universities after they have successfully completed their university preparation programmers.",
+      "Apply-Now": "Apply Now",
+      "imgPosition": "text-end"
+    },
+    "section": {
+      "application1": {
+        "image": "../../../assets/images/Academic-Studies-en-1.png",
+        "imagealign": "text-end",
+        "head": "Application for new students to pursue undergraduate and postgraduate degree worldwide",
+        "caption": "Universalstudy provides the University admission service through its affiliated universities and other universities that our office represents.",
+        "caption2": "An undergraduate degree is your first degree. It’s a course of study that gives a thorough grounding in a field or subject and usually takes three years of full time studying to complete.",
+        "caption3": "Part time studying can take longer. If you are finishing your A Levels or Foundation, you will need to apply for an undergraduate degree. On successful completion, you will be awarded a Bachelors degree. Depending on your subject, you will be awarded either a BA (Bachelor of Arts), BSc (Bachelor of Science), LLB (Bachelor of Laws), or BEng (Bachelor of Engineering).",
+        "caption4": "A postgraduate degree allows you to further explore a subject to attain a high level of proficiency, with an opportunity for independent study. Postgraduate degrees can be taught courses or research based. Taught courses usually take one year’s full time study to complete after which you get awarded a Masters degree (MA, MSc, MEng, etc.) based on your subject of study. Research degrees get awarded BPhil, MPhil, PhD based on the level of study."
+      },
+      "application2": {
+        "image": "../../../assets/images/Academic-Studies-en-2.png",
+        "imagealign": "text-end",
+        "head": "Application for new students to pursue undergraduate and postgraduate degree worldwide",
+        "caption": "Universalstudy provides the University admission service through its affiliated universities and other universities that our office represents.",
+        "caption2": "An undergraduate degree is your first degree. It’s a course of study that gives a thorough grounding in a field or subject and usually takes three years of full time studying to complete.",
+        "caption3": "Part time studying can take longer. If you are finishing your A Levels or Foundation, you will need to apply for an undergraduate degree. On successful completion, you will be awarded a Bachelors degree. Depending on your subject, you will be awarded either a BA (Bachelor of Arts), BSc (Bachelor of Science), LLB (Bachelor of Laws), or BEng (Bachelor of Engineering).",
+        "caption4": "A postgraduate degree allows you to further explore a subject to attain a high level of proficiency, with an opportunity for independent study. Postgraduate degrees can be taught courses or research based. Taught courses usually take one year’s full time study to complete after which you get awarded a Masters degree (MA, MSc, MEng, etc.) based on your subject of study. Research degrees get awarded BPhil, MPhil, PhD based on the level of study."
+      },
+      "application3": {
+        "image": "../../../assets/images/Academic-Studies-en-3.png",
+        "imagealign": "text-end",
+        "head": "Application for new students to pursue undergraduate and postgraduate degree worldwide",
+        "caption": "As a language English is one of the most widely spoken languages in the world. With some of the largest and economically strongest countries having adopted it as their native tone of tongue. For this reason many non English speaking students are choosing to learn English, to have this as a second language offers a huge advantage in the business world. A second language means more career advancements as well as opportunities.",
+        "caption2": "Studying the language will never be better unless it is through our schools. Where you can choose from the big number of partner language schools we are offering. Universalstudy also will assist you to choose the most suitable school based on your needs.",
+        "caption3": "At Universalstudy we are only too aware how important it is to learn English, be it for business, education or the sheer pleasure of being able to communicate with different people and cultures.",
+        "caption4": "We offer English courses for all needs and budgets in some 30 locations worldwide"
+      }
+    }
+  },
+  "short-term-Studies": {
+    "header1": "Our Advisory Service includes:",
+    "header": {
+      "head": "Short-term English",
+      "caption": "Thanks to our wide range of partners, we can answer any type of enquiry: General English, Business English, Examination courses, English & Leisure activities, Family programmers, Junior holidays, English for doctors, and English for teachers.",
+      "Apply-Now": "Apply Now",
+      "imgPosition": "text-end"
+    },
+    "section": {
+      "application1": {
+        "image": "../../../assets/images/shortterm-en-1.png",
+        "imagealign": "text-end",
+        "head": "All year-round English camp",
+        "caption": "This normally offered 4 English Immersion Programs to suit your needs:",
+        "caption2": "Spring & Autumn ",
+        "caption3": "Winter",
+        "caption4": "Summer",
+        "caption5": "All Year Round"
+      },
+      "application2": {
+        "image": "../../../assets/images/shortterm-en2.png",
+        "imagealign": "text-start",
+        "head": "TOEFL and IELTS workshop",
+        "caption": "The IELTS and TOEFL exams are known and feared by English language students worldwide. Both exams are used by universities to assess the English language ability of applicants. IELTS is widely used in the UK and Australia and also recognised by most American and Canadian universities, including Harvard Business School; TOEFL is used mainly by American universities, though also accepted in the UK and Australia.",
+        "caption2": "IELTS stands for the International English Language Testing system. It operates on a nine point band, where a nine indicates that the student has a level of English equivalent to a highly educated native speaker, and it tests all four skills ( reading, writing, listening and speaking) in an academic context. Generally speaking, undergraduate students need to obtain a score of 5.5 overall to gain university admission and postgraduate students need a score of 6.5 overall.",
+        "caption3": "The Test of English as a Foreign Language (or TOEFL, pronounced “toe-full”) evaluates the ability of an individual to use and understand English in an academic setting. It is an admission requirement for non-native English speakers at many English-speaking colleges and universities."
+      },
+      "application3": {
+        "image": "../../../assets/images/shortterm-en-3.png",
+        "imagealign": "text-end",
+        "head": "Intensive English courses",
+        "caption": "Intensive English Program (IEP): A type of English language program that usually includes 20 to 30 hours of classroom work per week.",
+        "caption2": "Intensive English courses are available for all levels – beginner to advanced. The course covers speaking, listening, reading and writing skills, naturally including grammar and vocabulary. The main emphasis of this course is normally on practical communication to build up your vocabulary and help to develop fluency and confidence.",
+        "caption3": "Studying the language will never be better unless it is through our schools. Where you can choose from the big number of partner language schools we are offering. Universalstudy also will assist you to choose the most suitable school based on your needs.",
+        "caption4": "At Universalstudy we are only too aware how important it is to learn English, be it for business, education or the sheer pleasure of being able to communicate with different people and cultures.",
+        "caption5": "We offer English courses for all needs and budgets in some 30 locations worldwide."
+      }
+    }
+  },
+  "Accommodation": {
+    "header1": "UniversalStudy specializes in three areas regarding accommodation::",
+    "header": {
+      "head": "Accommodation",
+      "caption": "UniversalStudy has linked with numerous letting specialists throughout the country to provide accommodation finding service to students studying in the UK, we have access to thousands of properties in the country.",
+      "Apply-Now": "Apply Now",
+      "imgPosition": "text-end"
+    },
+    "section": {
+      "application1": {
+        "image": "../../../assets/images/accom-en-1.png",
+        "imagealign": "text-end",
+        "head": "New students",
+        "caption": "A tailored property finding service for new students coming to the UK. Student accommodation is a term used in debates over the impact of student housing in the United Kingdom, especially with regard to the recent expansion of numbers in higher education. As increasing numbers of young people attend universities, institutionally-owned halls of residence (often just called halls) have become increasingly incapable of ",
+        "caption2": "coping with the demand for housing. At the same time, house-sharing has become considered a normal and sometimes desirable part of the student experience. In most university towns today, students only stay in halls for their first year, then move out into private student accommodation. ",
+        "caption3": "In many towns, this trend has led to the emergence of student areas. These tend to be low-rent areas which are situated near to city centres, and often have plenty of leisure facilities (e.g. pubs, cinemas, bowling alleys) within walking distance.",
+        "caption4": "Universalstudy can arrange all type of accommodation for students such as , hall of residence , hostfamilies , private accommodation and sharing accommodation to suite new arrival student."
+      },
+      "application2": {
+        "image": "../../../assets/images/accom-en-2.png",
+        "imagealign": "text-start",
+        "head": "Graduates",
+        "caption": "A friendly and supportive service for graduate students who would want to extend their stay in the country."
+      },
+      "application3": {
+        "image": "../../../assets/images/accom-en-3.png",
+        "imagealign": "text-end",
+        "head": "Short term lettings",
+        "caption": "A convenient, cheaper and hassle-free alternative to a hotel or serviced apartment for up to six months .",
+        "caption2": "A SHORT TERM LET by definition is any letting which is less then a 6 months. Generally a Landlord will charge more for a short let as they do not have the ongoing guarantee of income from the rent for the extended term of a lease. There are generally two types of SHORT LET’s. The first is general flats/studios/flatshares where the Landlord is willing to do a Short Let. This type of Let is NOT BOOKABLE and depends on what is available at the time you are looking. The Deposit and Rent in Advance varies but can be as little as One Week’s Deposit PLUS One Week’s Rent in Advance.",
+        "caption3": "The second type of SHORT LET properties that Flatland offers are the more expensive Luxury Serviced Apartments. This type of Short Let is BOOKABLE in advance and generally can be regarded as an alternative facility to booking a Hotel."
+      }
+    }
+  },
+  "walfare-support": {
+    "header1": "We Provide:",
+    "header": {
+      "head": "Welfare Support",
+      "caption": "We provide utmost academic and welfare support for international students already in the UK to assist them to excel in their academic performance and integrate into the local community. Please note, this is available to students in the UK only.",
+      "Apply-Now": "Apply Now",
+      "imgPosition": "text-end"
+    },
+    "section": {
+      "application1": {
+        "image": "../../../assets/images/walfare-en-1.png",
+        "imagealign": "text-end",
+        "head": "Orientation Package",
+        "caption": "This package is tailored for students to easily adapt to the new environment. Our services include:",
+        "caption2": "Personal meets up and pick up at the airport ",
+        "caption3": "Personal guided tour of the campus and local town",
+        "caption4": "A welcome pack containing info of local town, transport, etc",
+        "caption5": "Personal help in applying travel card and bank account",
+        "caption6": "Private transport service to university"
+      },
+      "application2": {
+        "image": "../../../assets/images/walfare-en-2.png",
+        "imagealign": "text-start",
+        "head": "Student Package",
+        "caption": "UniversalStudy has formed an alliance with local universities. We monitor and receive student’s academic progression report from the university to discuss any academic issues. The Student package contains:",
+        "caption2": "High quality private tuition services from professional tutors",
+        "caption3": "Effective exam preparation",
+        "caption4": "Assistance in PhD degree course proposal and submission",
+        "caption5": "Advice and counseling service",
+        "caption6": "Submission of university application forms",
+        "caption7": "Advice to identify and apply for scholarships",
+        "caption8": "Advice on visa"
+      },
+      "application3": {
+        "image": "../../../assets/images/walfare-en-3.png",
+        "imagealign": "text-end",
+        "head": "Parents/Guardian Package",
+        "caption": "Parents or the guardian of the students often worry the academic progression and personal well-being of students. Because of these reasons UniversalStudy offers services to provide regularly updated reports of both the academic and non academic progression of the students to the parents/guardians. This package contains:",
+        "caption2": "Quarterly meeting with student to discuss all matters of academic progress and the provision of written reports of these meetings to the parents, guardian or sponsor.",
+        "caption3": "An annual meeting with the university supervisor, and both written and telephone reporting thereafter to the parent, guardian or sponsor",
+        "caption4": "Rapid telephone reporting to the parent, guardian or sponsor should UniversalStudy have any concerns at any time regarding the academic progress of the student.",
+        "caption5": "Quarterly meetings with the student to discuss all matters of personal well-being and the provision of written reports of these meetings to the parent, guardian or sponsor.",
+        "caption6": "Rapid telephone reporting to the parent, guardian or sponsor should UniversalStudy have any concerns at any time regarding the personal well-being of the student."
+      }
+    }
+  },
+  "contactHome":{
+    "application_head":"Basic Info",
+    "application_caption":"Please, complete the following inquiries.",
+    "headClass":"contact-head",
+    "head":"Contact Us",
+    "name-field":{
+      "class":"name-field",
+      "name":"name"
+    },
+    "email-field":{
+      "class":"email-field",
+      "name":"email"
+    },
+    "phone-field":{
+      "class":"phone-field",
+      "name":"phone"
+    },
+    "country-field":{
+      "class":"country-field",
+      "name":"country"
+    },
+    "city-field":{
+      "class":"city-field",
+      "name":"country"
+    },
+    "Current-Address-field":{
+      "class":"Current-Address-field",
+      "name":"Current Address"
+    },
+    "Subject-field":{
+      "class":"Subject-field",
+      "name":"Subject"
+    },
+    "Postal-Code-field":{
+      "class":"Postal-Code-field",
+      "name":"Postal Code (Optional)"
+    },
+    "textarea": {
+      "class": "textarea",
+      "placeholder": "Write your inquires here.."
+    },
+    "preferred":{
+      "name":"Preferred Contact Method:",
+      "email":"email",
+      "mobil":"mobil",
+      "margin":"ms-3",
+      "margin-option":"ms-2",
+      "send":"send"
+
+    }
+
+
+  },
+  "location": {
+    "location1": {
+      "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
+      "caption1span": "Tel ",
+      "caption1": "0044 (0) 7922571797",
+      "caption2span": "WhatsApp ",
+      "caption2": " 0044 (0) 7922571797",
+      "caption3span": "Email",
+      "caption3": "info@universalstudy.co.uk"
+    },
+    "location2": {
+      "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
+      "caption1span": "Tel ",
+      "caption1": "00965 6701500",
+      "caption2span": "WhatsApp ",
+      "caption2": " 00965 6701500",
+      "caption3span": "Email",
+      "caption3": "info@universalstudy.co.uk"
+    },
+    "location3": {
+      "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
+      "caption1span": "Tel ",
+      "caption1": "00965 6701500",
+      "caption2span": "WhatsApp ",
+      "caption2": " 00965 6701500",
+      "caption3span": "Email",
+      "caption3": "info@universalstudy.co.uk"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 All Rights Reserved",
+    "name": "mo",
+    "Created-By": "Created By",
+    "log": {
+      "head": "Universal study",
+      "caption": "Your first choice for education in the UK & worldwide",
+      "border": "logo-caption"
+    },
+    "Services": {
+      "footer-Services": "footer-Services",
+      "head": "Services",
+      "Services1": "Academic Studies",
+      "Services2": "Short-term English",
+      "Services3": "Accommodation",
+      "Services4": "Welfare Support"
+    },
+    "Sitemap": {
+      "footer-Sitemap": "footer-Sitemap",
+      "head": "Sitemap",
+      "Services1": "Academic Studies",
+      "Services2": "Short-term English",
+      "Services3": "Accommodation",
+      "Services4": "Welfare Support"
+    },
+    "Info": {
+      "footer-Info": "footer-location",
+      "head": "Info",
+      "Services1": "Home",
+      "Services2": "Tel ",
+      "Services2span": "+44 (0) 1273 900218",
+      "Services3": "Mob ",
+      "Services3span": " +44 (0) 7922 571797",
+      "Services4": "Email ",
+      "Services4span": " info@universalstudy.co.uk"
+    }
+  },
+  "applicationApply":{
+    "head":"What do you want to apply?",
+    "caption":"Please, complete the following inquiries.",
+    "label":"Which  language school you would like to apply (the name of school )?",
+    "margin":"ms-3",
+    "next":"Next",
+    "back":"back",
+    "want-to-apply":{
+      "label" :"Which  language school you would like to apply (the name of school )?",
+      "Language-Course":"Language Course",
+      "Foundation-Course":"Foundation Course",
+      "Bachelor-Degree":"Bachelor Degree",
+      "Master-Degree":"Master Degree"
+    },
+    "Language-Course":{
+      "head":"Language Course",
+      "caption":"Please, complete the following inquiries.",
+      "startcourse":"When you would like to start your course( the date )?",
+      "weeks":"How many weeks you would like to study ?",
+      "arrival-airport":"Name of arrival Airport ?",
+      "hourperweek":
+      {
+        "label":"How many hours per week you would like to take ?",
+        "one":"15",
+        "two":"20",
+        "three":"25",
+        "four":"30"
+      },
+      "accommodation":
+      {
+        "label":"What type of accommodation you would like to have with your course ?",
+        "one":"Home- stay  half- board ( lunch and dinner meal only)",
+        "two":"Home stay  Full board (breakfast , lunch , dinner ) ",
+        "three":"Bed and breakfast only ",
+        "four":"Residence",
+        "five":"No Accommodation Needed "
+      },
+      "airport-trasfer":
+      {
+        "label":"Would you like to have airport transfer ?",
+        "yes":"Yes",
+        "no":"No "
+      },
+      "airport-trasfer-yes":
+      {
+        "label":"would like one way or two way transfer  ?",
+        "one":"Oneway",
+        "two":"Oneway "
+      }
+    },
+    "Foundation-Course":{
+      "head":"Foundation Course",
+      "label":"Please, complete the following inquiries.",
+      "terms":{
+        "label":"How many terms you would like to take your Foundaion ?",
+        "one":"2 Terms",
+        "two":"2.5 Terms",
+        "three":"3 Terms",
+        "four":"3.5 Terms ",
+        "five":"4"
+      },
+      "ielts":{
+        "label":"Do you currently have an IELTS Certificate ?",
+        "yes":"yes",
+        "no":"no",
+        "ieltsyes":{
+          "label":"what is your Scores please ?",
+          "overall":"overall",
+          "Writing":"Writing",
+          "Reading":"Reading",
+          "Speaking":"Speaking",
+          "Listening":"Listening"
+        },
+        "ieltsno":{
+          "label":"please mention the English Certifcate you have hold and scores ?"
+        }
+      },
+      "graduated":{
+        "label":"Have you graduated from high school ?",
+        "yes":"yes",
+        "no":"no"
+      },
+      "accommodation":{
+        "label":"Would like to book university accommodation with your foundation Studies ?",
+        "yes":"yes",
+        "no":"no"
+      }
+    }
+  }
+}

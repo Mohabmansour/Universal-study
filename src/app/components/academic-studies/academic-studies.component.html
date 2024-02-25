@@ -1,0 +1,96 @@
+<section class="" [dir]="(_LangService.direction$ | async)">
+    <div class="academic-header">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="item">
+                    <div class="academic-header-caption">
+                        <h1>{{"Academic-Studies.header.head" | translate}}</h1>
+
+                        <p>{{"Academic-Studies.header.caption" | translate}}</p>
+                        <div class="apply-now">
+                            <button>{{"Academic-Studies.header.Apply-Now" | translate}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="academy-img {{'Academic-Studies.header.imgPosition' | translate}} ">
+                    <img src="../../../assets/images/Vec.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="academic-Advisory">
+        <div>
+            <h6>{{"Academic-Studies.header1" | translate}}</h6>
+        </div>
+        <div class="row ps-0">
+            <div class="col-lg-1 mt-4">
+                <div class="Advisory-img position-relative" style="height: 100%;">
+                    <main lottie [options]="options" (animationCreated)="animationCreated($event)"></main>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="Advisory-caption">
+                    <h6>{{"Academic-Studies.section.application1.head" | translate}}</h6>
+                    <p>{{"Academic-Studies.section.application1.caption" | translate}}</p>
+                    <p>{{"Academic-Studies.section.application1.caption2" | translate}}</p>
+                    <p>{{"Academic-Studies.section.application1.caption3" | translate}}</p>
+                    <p> {{"Academic-Studies.section.application1.caption4" | translate}}</p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="{{'Academic-Studies.section.application1.imagealign'  | translate}}">
+                    <img style="height: 360px; width: 502px;"
+                        src="{{'Academic-Studies.section.application1.image' | translate}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row ps-0">
+            <div class="col-lg-5">
+                <div class="{{'Academic-Studies.section.application2.imagealign'  | translate}}">
+                    <img style="height: 360px; width: 502px;"
+                        src="{{'Academic-Studies.section.application2.image' | translate}}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-1 mt-4">
+                <div class="Advisory-img position-relative" style="height: 100%;">
+                    <main lottie [options]="options2" (animationCreated)="animationCreated($event)"></main>
+                </div>
+            </div>
+            <div class="col-lg-6  mt-4">
+                <div class="Advisory-caption">
+                    <h6>{{"Academic-Studies.section.application2.head" | translate}}</h6>
+                    <p>{{"Academic-Studies.section.application2.caption" | translate}}</p>
+                    <p>{{"Academic-Studies.section.application2.caption2" | translate}}</p>
+                    <p>{{"Academic-Studies.section.application2.caption3" | translate}}</p>
+                    <p> {{"Academic-Studies.section.application2.caption4" | translate}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row ps-0">
+            <div class="col-lg-1 mt-4">
+                <div class="Advisory-img position-relative" style="height: 100%;">
+                    <main lottie [options]="options3" (animationCreated)="animationCreated($event)"></main>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="Advisory-caption">
+                    <h6>{{"Academic-Studies.section.application3.head" | translate}}</h6>
+                    <p>{{"Academic-Studies.section.application3.caption" | translate}}</p>
+                    <p>{{"Academic-Studies.section.application3.caption2" | translate}}</p>
+                    <p>{{"Academic-Studies.section.application3.caption3" | translate}}</p>
+                    <p> {{"Academic-Studies.section.application3.caption4" | translate}}</p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="{{'Academic-Studies.section.application3.imagealign'  | translate}}">
+                    <img style="height: 360px; width: 502px;"
+                        src="{{'Academic-Studies.section.application3.image' | translate}}" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

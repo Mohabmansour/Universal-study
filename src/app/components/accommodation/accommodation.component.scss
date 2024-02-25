@@ -1,0 +1,105 @@
+section {
+    & {
+        margin-top: 79px;
+    }
+
+    .academic-header {
+        background-color: rgba(237, 253, 253, 1);
+        padding: 80px 65px 50px 65px;
+
+        .academic-header-caption {
+            h1 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 50px;
+                letter-spacing: 0em;
+                color: rgba(20, 25, 27, 1);
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0em;
+                margin-top: 15px;
+            }
+
+            .line {
+                width: 18%;
+                height: 2px;
+                background-color: rgba(0, 181, 186, 1);
+                margin-top: 20px;
+            }
+
+            .apply-now {
+                button {
+                    width: 158px;
+                    height: 46px;
+                    padding: 12px, 24px, 12px, 24px;
+                    border-radius: 8px;
+                    border: none;
+                    ;
+                    background-color: rgba(36, 119, 137, 1);
+                    //styleName: Medium/14px M;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 1);
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    .academic-Advisory {
+
+
+        .row {
+            margin-top: 100px;
+        }
+
+        .Advisory-caption {
+
+            // & {
+            //     margin-top: 30px;
+            // }
+            h6 {
+                //styleName: Bold/16px B;
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                color: rgba(0, 0, 0, 1);
+                margin-bottom: 15px;
+            }
+
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0em;
+                margin-bottom: 5px;
+            }
+        }
+
+        & {
+            margin-top: 45px;
+            padding: 0px 65px;
+        }
+
+        p {
+            //styleName: Medium/14px M;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0em;
+
+
+        }
+
+    }
+}

@@ -1,0 +1,113 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="{{'contactHome.headClass'  | translate}} mb-4">
+                <h1 role="button">
+                    {{'contactHome.head' | translate}}
+                </h1>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="position-relative {{'contactHome.name-field.class'  | translate}}">
+                            <img class="inputimg" src="../../../assets/images/name-icon.svg" alt="">
+                            <mat-form-field appearance="fill">
+                                <mat-label>{{"contactHome.name-field.name" | translate}}</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="position-relative {{'contactHome.email-field.class'  | translate}}">
+                            <img class="inputimg" src="../../../assets/images/carbon_email-new.svg" alt="">
+                            <mat-form-field appearance="fill">
+                                <mat-label>{{"contactHome.email-field.name" | translate}}</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="position-relative {{'contactHome.phone-field.class'  | translate}}">
+                            <img class="inputimg" src="../../../assets/images/phone-icon.svg" alt="">
+
+                            <mat-form-field appearance="fill">
+                                <mat-label>{{'contactHome.phone-field.name' | translate}}</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="position-relative {{'contactHome.country-field.class'  | translate}}">
+                            <mat-form-field>
+                                <img class="inputimg" src="../../../assets/images/flag.svg" alt="">
+
+                                <!-- <mat-label>Favorite food</mat-label> -->
+                                <mat-select placeholder="{{'contactHome.country-field.name'  | translate}}">
+                                    <mat-option *ngFor="let food of foods ; let track = index"
+                                        [value]="food.value">{{food.viewValue}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="position-relative {{'contactHome.city-field.class'  | translate}}">
+                            <img class="inputimg" src="../../../assets/images/city-icon.svg" alt="">
+                            <mat-form-field>
+                                <mat-select placeholder="{{'contactHome.city-field.name'  | translate}}">
+                                    <mat-option *ngFor="let food of foods ; let track = index"
+                                        [value]="food.value">{{food.viewValue}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="position-relative {{'contactHome.Current-Address-field.class' | translate}}">
+                            <img class="inputimg" src="../../../assets/images/addres.svg" alt="">
+                            <mat-form-field appearance="fill">
+                                <mat-label>{{'contactHome.Current-Address-field.name' | translate}}</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="{{'contactHome.Postal-Code-field.class' | translate}}">
+                            <mat-form-field appearance="fill">
+                                <mat-label>{{'contactHome.Postal-Code-field.name' | translate}}</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="position-relative {{'contactHome.Subject-field.class' | translate}}">
+                            <img class="inputimg" src=" ../../../assets/images/bx_message.svg" alt="">
+                            <mat-form-field appearance="fill">
+                                <mat-label>{{'contactHome.Subject-field.name' | translate}}</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="{{'contactHome.textarea.class' | translate}}">
+                            <mat-form-field>
+                                <mat-label>{{'contactHome.textarea.placeholder' | translate}}</mat-label>
+                                <textarea matInput></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center Preferred-inputs">
+                    <div>
+                        <p class='m-0'>{{'contactHome.preferred.name' | translate}}</p>
+                    </div>
+                    <div class="d-flex {{'contactHome.preferred.margin' | translate}}">
+                        <div class="d-flex">
+                            <input checked name="Preferred" id="Email" type="radio">
+                            <label class="{{'contactHome.preferred.margin-option' | translate}}" name="Email"
+                                for="Email">{{'contactHome.preferred.email' | translate}}</label>
+                        </div>
+                        <div class="{{'contactHome.preferred.margin' | translate}}">
+                            <input name="Preferred" id="Mobile" type="radio">
+                            <label class="{{'contactHome.preferred.margin-option' | translate}}" name="Mobile"
+                                for="Mobile">{{'contactHome.preferred.mobil' | translate}}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="prefered-send">
+                    <button>{{'contactHome.preferred.send' | translate}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

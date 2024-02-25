@@ -1,0 +1,103 @@
+section {
+    margin-top: 120px;
+    background-image: url(../../../assets/images/ourNums.png);
+    background-position: 100% 100%;
+    background-size: cover;
+    height: 460px;
+    position: relative;
+
+    .our-nums-caption {
+        h3 {
+            color: var(--Basic-White, #FFF);
+            text-align: center;
+            /* Bold/28px B */
+            font-family: Poppins;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+        }
+    }
+
+    .nums-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(36, 119, 137, 0.9);
+    }
+
+    .num {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        span {
+            color: #FFF;
+
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 64px;
+            margin-right: 5px;
+            /* 133.333% */
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            margin-top: 16px;
+
+            /* Medium/20px M */
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .num-ar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        span {
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 64px;
+            margin-left: 5px;
+            /* 133.333% */
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            margin-top: 16px;
+            /* Medium/20px M */
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    section {
+        height: 100vh;
+
+    }
+}

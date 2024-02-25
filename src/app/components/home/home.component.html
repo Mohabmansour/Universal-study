@@ -1,0 +1,13 @@
+<app-header [dir]="(_LangService.direction$ | async)"></app-header>
+<div class="px-5  project-con" [dir]="(_LangService.direction$ | async)">
+    <app-uk-sercices></app-uk-sercices>
+    <app-about-us></app-about-us>
+    <app-choose-us></app-choose-us>
+    <app-universal-study></app-universal-study>
+    <app-location></app-location>
+
+    <app-gallary></app-gallary>
+    <app-contact></app-contact>
+
+</div>
+<app-our-numbers class="mb-5" [dir]="(_LangService.direction$ | async)"></app-our-numbers>

@@ -1,0 +1,791 @@
+section {
+    height: auto;
+    padding: 150px 0px;
+    background-image: url(../../../assets/images/BG.png);
+    background-position: center center;
+    background-size: cover;
+
+
+    .Basic_Info {
+        width: 70%;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        margin: auto;
+        padding: 50px;
+
+        .Basic_Info_head {
+            h2 {
+                //styleName: Bold/24px B;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
+
+
+            }
+
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+  
+
+            }
+        }
+
+    }
+    .want-to-apply{
+        width: 70%;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        margin: auto;
+        padding: 50px;
+
+        .want-to-apply-head {
+            h2 {
+                //styleName: Bold/24px B;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
+
+
+            }
+
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+  
+
+            }
+        }
+    }
+    .Language_Course{
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 1);
+        padding: 50px;
+        width: 70%;
+        margin: auto;
+        border-radius: 8px;
+        .Language_Course_head{
+            h2 {
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                p {
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+        }
+    }
+    .Bachelor_Degree{
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 1);
+        padding: 50px;
+        width: 70%;
+        margin: auto;
+        border-radius: 8px;
+        .Bachelor_Degree_head{
+            h2 {
+                    //styleName: Bold/24px B;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                p {
+                    //styleName: Regular/12px R;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+        }
+    }
+    .Foundation_Course{
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 1);
+        padding: 50px;
+        width: 70%;
+        margin: auto;
+        border-radius: 8px;
+        .Foundation_Course_head{
+            h2 {
+                    //styleName: Bold/24px B;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                p {
+                    //styleName: Regular/12px R;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+        }
+    }
+    .Master_Degree{
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 1);
+        padding: 50px;
+        width: 70%;
+        margin: auto;
+        border-radius: 8px;
+
+        .Master_Degree_head{
+            h2 {
+                    //styleName: Bold/24px B;
+                    font-family: Poppins;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+                p {
+                    //styleName: Regular/12px R;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+        }
+
+    }
+}
+.name-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: 10PX;
+        z-index: 99 !important;
+    }
+    // ::ng-deep .mat-mdc-text-field-focused {
+    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-container-shape: 2px !important;
+    //     --mdc-outlined-text-field-focus-outline-color: red !important;
+    //     border-radius: 8px !important;
+    // }
+    input {
+        text-indent: 40px;
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.name-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: 10PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+
+
+}
+.email-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: 10PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        &:hover {}
+
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.email-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: 10PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        &:hover {}
+
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+}
+.Current-Address-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: 10PX;
+        z-index: 99 !important;
+    }
+
+    // ::ng-deep .mat-mdc-text-field-focused {
+    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-container-shape: 2px !important;
+    //     --mdc-outlined-text-field-focus-outline-color: red !important;
+    //     border-radius: 8px !important;
+    // }
+
+    ::ng-deep .mat-mdc-form-field .mdc-notched-outline--notched {
+        --mdc-outlined-text-field-focus-outline-width: 2px !important;
+        --mdc-outlined-text-field-outline-width: 2px !important;
+        --mdc-outlined-text-field-container-shape: 2px !important;
+        --mdc-outlined-text-field-focus-outline-color: red !important;
+        border-radius: 8px !important;
+
+    }
+
+    input {
+        --mdc-outlined-text-field-focus-outline-color: blue !important;
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.Current-Address-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: 10PX;
+        z-index: 99 !important;
+    }
+
+    // ::ng-deep .mat-mdc-text-field-focused {
+    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-container-shape: 2px !important;
+    //     --mdc-outlined-text-field-focus-outline-color: red !important;
+    //     border-radius: 8px !important;
+    // }
+
+    ::ng-deep .mat-mdc-form-field .mdc-notched-outline--notched {
+        --mdc-outlined-text-field-focus-outline-width: 2px !important;
+        --mdc-outlined-text-field-outline-width: 2px !important;
+        --mdc-outlined-text-field-container-shape: 2px !important;
+        --mdc-outlined-text-field-focus-outline-color: red !important;
+        border-radius: 8px !important;
+
+    }
+
+    input {
+
+        --mdc-outlined-text-field-focus-outline-color: blue !important;
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+}
+.phone-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: 10PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.phone-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: 10PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+}
+.country-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: -3px;
+
+        z-index: 99 !important;
+    }
+
+    ::ng-deep .mat-mdc-select-placeholder {
+        margin-left: 40px;
+
+    }
+
+    ::ng-deep .mat-mdc-select-min-line {
+        margin-left: 40px;
+    }
+
+    ::ng-deep .mdc-text-field--focused {
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important;
+    }
+
+    ::ng-deep .mdc-text-field--filled {
+        &::placeholder {
+            margin-left: 50px !important;
+        }
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important
+    }
+
+    ::ng-deep .mat-mdc-text-field-wrapper {
+        // border-radius: 8px;
+        border-bottom: none !important;
+
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.country-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: -3PX;
+        z-index: 99 !important;
+    }
+
+    ::ng-deep .mat-mdc-select-placeholder {
+        margin-right: 40px;
+
+    }
+
+    ::ng-deep .mat-mdc-select-min-line {
+        margin-right: 40px;
+    }
+
+    ::ng-deep .mdc-text-field--focused {
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important;
+    }
+
+    ::ng-deep .mdc-text-field--filled {
+        &::placeholder {
+            margin-right: 50px !important;
+        }
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important
+    }
+
+    ::ng-deep .mat-mdc-text-field-wrapper {
+        // border-radius: 8px;
+        border-bottom: none !important;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+}
+.city-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: 8PX;
+        z-index: 99 !important;
+    }
+
+    ::ng-deep .mat-mdc-select-placeholder {
+        margin-left: 40px;
+
+    }
+
+    ::ng-deep .mat-mdc-select-min-line {
+        margin-left: 40px;
+    }
+
+    ::ng-deep .mdc-text-field--focused {
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important;
+    }
+
+    ::ng-deep .mdc-text-field--filled {
+        &::placeholder {
+            margin-left: 50px !important;
+        }
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important
+    }
+
+    ::ng-deep .mat-mdc-text-field-wrapper {
+        // border-radius: 8px;
+        border-bottom: none !important;
+
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.city-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: 15PX;
+        z-index: 99 !important;
+    }
+
+    ::ng-deep .mat-mdc-select-placeholder {
+        margin-right: 40px;
+
+    }
+
+    ::ng-deep .mat-mdc-select-min-line {
+        margin-right: 40px;
+    }
+
+    ::ng-deep .mdc-text-field--focused {
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important;
+    }
+
+    ::ng-deep .mdc-text-field--filled {
+        &::placeholder {
+            margin-right: 50px !important;
+        }
+
+        --mdc-filled-text-field-active-indicator-height: 0px !important
+    }
+
+    ::ng-deep .mat-mdc-text-field-wrapper {
+        // border-radius: 8px;
+        border-bottom: none !important;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+}
+.Postal-Code-field {
+    // ::ng-deep .mat-mdc-text-field-focused {
+    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-container-shape: 2px !important;
+    //     --mdc-outlined-text-field-focus-outline-color: red !important;
+    //     border-radius: 8px !important;
+    // }
+
+
+
+}
+.Postal-Code-field-ar {
+    // ::ng-deep .mat-mdc-text-field-focused {
+    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-container-shape: 2px !important;
+    //     --mdc-outlined-text-field-focus-outline-color: red !important;
+    //     border-radius: 8px !important;
+    // }
+
+    ::ng-deep .mat-mdc-form-field .mdc-notched-outline--notched {
+        --mdc-outlined-text-field-focus-outline-width: 2px !important;
+        --mdc-outlined-text-field-outline-width: 2px !important;
+        --mdc-outlined-text-field-container-shape: 2px !important;
+        --mdc-outlined-text-field-focus-outline-color: red !important;
+        border-radius: 8px !important;
+
+    }
+
+    input {
+
+        --mdc-outlined-text-field-focus-outline-color: blue !important;
+        // background: url(../../../assets/images/name-icon.svg) left no-repeat;
+
+
+        &::placeholder {}
+    }
+
+    ::ng-deep .mdc-floating-label {}
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.Subject-field {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        left: 8PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-left: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-left: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-left: 50px !important;
+    }
+}
+.Subject-field-ar {
+    .inputimg {
+        position: absolute;
+        top: 12PX;
+        right: 8PX;
+        z-index: 99 !important;
+    }
+
+    input {
+        text-indent: 40px;
+
+        &::placeholder {
+            margin-right: 40px;
+        }
+    }
+
+    ::ng-deep .mdc-floating-label {
+        padding-right: 35px !important;
+    }
+
+    ::ng-deep .mdc-floating-label--float-above {
+        padding-right: 50px !important;
+      
+    }
+}
+.textarea {
+    textarea {
+        height: 264px !important;
+        // background-color: rgba(155, 175, 181, 0.1) !important;
+        border: none !important;
+
+    }
+
+    .form-control:focus {
+        box-shadow: none !important
+    }
+}
+.textarea-ar {
+    textarea {
+        height: 264px !important;
+        // background-color: rgba(155, 175, 181, 0.1) !important;
+        border: none !important;
+    }
+
+    .form-control:focus {
+        box-shadow: none !important
+    }
+}
+::ng-deep .mat-mdc-form-field {
+
+    // ::ng-deep .mdc-notched-outline {
+    //     background-color: rgba(155, 175, 181, 0.1);
+    //     border-radius: 8px !important;
+    //     padding: 0px;
+    // }
+
+    // ::ng-deep .mdc-text-field--outlined {
+    //     --mdc-outlined-text-field-focus-outline-width: 0px !important;
+    //     --mdc-outlined-text-field-outline-width: 0px !important;
+    //     --mdc-outlined-text-field-container-shape: 0px !important;
+
+    // }
+
+    // ::ng-deep .mdc-notched-outline--notched {
+    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-outline-width: 2px !important;
+    //     --mdc-outlined-text-field-container-shape: 2px !important;
+    //     --mdc-outlined-text-field-focus-outline-color: rgba(128, 128, 128, 0.5) !important;
+    //     border-radius: 8px !important;
+
+    // }
+
+
+    // ::ng-deep .mat-form-field-underline {
+    //     transition: border-color 0.3s !important;
+    //     /* Add a transition for a smooth effect */
+    // }
+
+    // ::ng-deep .mat-focused .mat-form-field-underline {
+    //     border-color: red !important;
+    //     /* Specify the color you want when the input is focused */
+    // }
+
+    width: 100%;
+
+}
+
+.application-btn{
+    &{
+        text-align: right;
+    }
+    .next{
+        width: 158px;
+            height: 46px;
+            border-radius: 8px;
+            border: none;
+            background-color: rgba(36, 119, 137, 1);
+            //styleName: Medium/14px M;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+color: rgba(255, 255, 255, 1);
+
+
+
+
+    }
+    .back{
+        width:99px;
+height:45px;
+border-radius: 8px;
+border: 1px solid rgba(155, 175, 181, 1);
+background-color: transparent;
+
+
+    }
+}

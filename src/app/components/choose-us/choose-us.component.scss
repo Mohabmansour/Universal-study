@@ -1,0 +1,107 @@
+section {
+    & {
+        margin-top: 100px;
+    }
+
+    .about-caption {
+        h4 {
+            color: var(--Basic-Black, #14191B);
+
+            /* Bold/36px B */
+            font-family: Poppins;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+            position: relative;
+            margin-left: 40px;
+            /* 138.889% */
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 2px;
+                top: 25px;
+                left: -39px;
+                background-color: rgba(0, 181, 186, 1);
+            }
+        }
+
+        p {
+            color: var(--Dark-W1, #223338);
+            /* Regular/12px R */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 27px;
+            /* 166.667% */
+        }
+    }
+
+    .about-caption-ar {
+        h4 {
+            color: var(--Basic-Black, #14191B);
+            /* Bold/36px B */
+            font-family: Poppins;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+            position: relative;
+            margin-right: 45px;
+            /* 138.889% */
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 35px;
+                height: 2px;
+                top: 25px;
+                right: -44px;
+                background-color: rgba(0, 181, 186, 1);
+            }
+        }
+
+        p {
+            color: var(--Dark-W1, #223338);
+            /* Regular/12px R */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 27px;
+            /* 166.667% */
+        }
+    }
+}
+
+
+
+// Styles for mobile
+@media only screen and (max-width: 767px) {
+    section {
+        .about-caption {
+            & {
+                padding: 0px !important;
+            }
+
+            h4 {
+                font-size: 22px
+            }
+        }
+
+        .about-caption-ar,
+        h4 {
+            font-size: 28px
+        }
+    }
+
+    .col-lg-6 {
+        padding: 0px;
+    }
+
+}
