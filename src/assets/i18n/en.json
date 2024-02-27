@@ -417,6 +417,14 @@
     "Foundation-Course":{
       "head":"Foundation Course",
       "label":"Please, complete the following inquiries.",
+      "degree":"What is the name of the degree you would like to Study ?",
+      "startcourse":{
+        "label":"When you would like to start your course ?",
+        "January":"January",
+         "March":"March",
+         "June":"June ",
+         "September":"September"
+      },
       "terms":{
         "label":"How many terms you would like to take your Foundaion ?",
         "one":"2 Terms",
