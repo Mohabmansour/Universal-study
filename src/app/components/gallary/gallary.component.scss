@@ -35,6 +35,36 @@ section {
 
         }
     }
+    .gallary-header-ar {
+        h1 {
+            //styleName: Bold/36px B;
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            position: relative;
+            margin-right: 50px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 36px;
+                height: 3px;
+                background-color: rgba(0, 181, 186, 1);
+                right: -50px;
+                top: 40%;
+            }
+
+
+        }
+
+        p {
+            //styleName: Regular/12px R;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 400;
+
+
+        }
+    }
 
     .image {
         & {

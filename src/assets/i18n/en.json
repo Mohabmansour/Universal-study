@@ -298,6 +298,11 @@
 
 
   },
+  "gallary":{
+    "headClass":"gallary-header",
+    "head":"gallary",
+    "caption":"Our team, see our events and activities with our clients and partners."
+  },
   "location": {
     "location1": {
       "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
@@ -456,6 +461,95 @@
       },
       "accommodation":{
         "label":"Would like to book university accommodation with your foundation Studies ?",
+        "yes":"yes",
+        "no":"no"
+      }
+    },
+    "Bachelor-Degree":{
+      "head":"Bachelor Degree",
+      "label":"Please, complete the following inquiries.",
+      "degree":"What is the name of the degree you would like to Study ?",
+      "startcourse":{
+        "label":"When you would like to start your course ?",
+        "January":"January",
+         "September":"September"
+      },
+      "studding":{
+        "label":"What level of study have you completed or currently studding?",
+        "Foundation":"Foundation ",
+         "Diploma":"Diploma"
+      },
+      "terms":{
+        "label":"How many terms you would like to take your Foundaion ?",
+        "one":"2 Terms",
+        "two":"2.5 Terms",
+        "three":"3 Terms",
+        "four":"3.5 Terms ",
+        "five":"4"
+      },
+      "ielts":{
+        "label":"Do you currently have an IELTS Certificate ?",
+        "yes":"yes",
+        "no":"no",
+        "ieltsyes":{
+          "label":"what is your Scores please ?",
+          "overall":"overall",
+          "Writing":"Writing",
+          "Reading":"Reading",
+          "Speaking":"Speaking",
+          "Listening":"Listening"
+        },
+        "ieltsno":{
+          "label":"please mention the English Certifcate you have hold and scores ?"
+        }
+      },
+      "graduated":{
+        "label":"Have you graduated from high school ?",
+        "yes":"yes",
+        "no":"no"
+      }
+    },
+    "Master_Degree":{
+      "head":"Master Degree",
+      "label":"Please, complete the following inquiries.",
+      "degree":"What is the name of the Master Degree you would like to study please ?",
+      "startcourse":{
+        "label":"When you would like to start your course ?",
+        "January":"January",
+         "September":"September"
+      },
+      "completed":{
+        "label":"Have you completed your bachelor degree ?",
+        "Yes":"Yes",
+         "no":"no",
+         "studding":"Currently studding"
+      },
+      "terms":{
+        "label":"How many terms you would like to take your Foundaion ?",
+        "one":"2 Terms",
+        "two":"2.5 Terms",
+        "three":"3 Terms",
+        "four":"3.5 Terms ",
+        "five":"4"
+      },
+      "ielts":{
+        "label":"Do you currently have an IELTS Certificate ?",
+        "yes":"yes",
+        "no":"no",
+        "ieltsyes":{
+          "label":"what is your Scores please ?",
+          "overall":"overall",
+          "Writing":"Writing",
+          "Reading":"Reading",
+          "Speaking":"Speaking",
+          "Listening":"Listening"
+        },
+        "ieltsno":{
+          "label":"please mention the English Certifcate you have hold and scores ?"
+        }
+      },
+      "graduated":{
+        "label":"Have you graduated from high school ?",
         "yes":"yes",
         "no":"no"
       }

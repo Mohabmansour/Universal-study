@@ -301,6 +301,11 @@
 
     }
   },
+  "gallary":{
+    "headClass":"gallary-header-ar",
+    "head":"المعرض",
+    "caption":"فريقنا، شاهد فعالياتنا وأنشطتنا مع عملائنا وشركائنا."
+  },
   "location": {
     "location1": {
       "head": "12 شارع المحطة، إيستبورن،,شرق ساسكس، BN21 4RG,المملكة المتحدة",
@@ -459,6 +464,61 @@
         "label":"هل ترغب في حجز سكن جامعي مع دراساتك التأسيسية؟",
         "yes":"نعم",
         "no":"لا"
+      }
+    },
+    "Bachelor-Degree":{
+      "head":"درجة البكالوريوس",
+      "label":"يُرجى إكمال الاستفسارات التالية.",
+      "degree":"ما هو اسم الشهادة التي ترغب في دراستها؟",
+      "studding":{
+        "label":"ما هو المستوى الدراسي الذي أكملته أو الذي تدرسه حالياً؟",
+        "Foundation":"المؤسسة ",
+         "Diploma":"شهادة الدبلوم"
+      }
+    },
+    "Master_Degree":{
+      "head":"درجة الماجستير",
+      "label":"يُرجى إكمال الاستفسارات التالية.",
+      "degree":"ما هو اسم درجة الماجستير التي ترغب في دراستها من فضلك؟",
+      "startcourse":{
+        "label":"When you would like to start your course ?",
+        "January":"January",
+         "September":"September"
+      },
+      "completed":{
+        "label":"هل أكملت درجة البكالوريوس؟",
+        "Yes":"نعم",
+         "no":"لا",
+         "studding":"تدرس حالياً"
+      },
+      "terms":{
+        "label":"How many terms you would like to take your Foundaion ?",
+        "one":"2 Terms",
+        "two":"2.5 Terms",
+        "three":"3 Terms",
+        "four":"3.5 Terms ",
+        "five":"4"
+      },
+      "ielts":{
+        "label":"Do you currently have an IELTS Certificate ?",
+        "yes":"yes",
+        "no":"no",
+        "ieltsyes":{
+          "label":"what is your Scores please ?",
+          "overall":"overall",
+          "Writing":"Writing",
+          "Reading":"Reading",
+          "Speaking":"Speaking",
+          "Listening":"Listening"
+        },
+        "ieltsno":{
+          "label":"please mention the English Certifcate you have hold and scores ?"
+        }
+      },
+      "graduated":{
+        "label":"Have you graduated from high school ?",
+        "yes":"yes",
+        "no":"no"
       }
     }
   }

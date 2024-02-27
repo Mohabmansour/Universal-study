@@ -1,5 +1,5 @@
 <section [dir]="(_LangService.direction$ | async)">
-    <div class="Basic_Info" *ngIf="Basic_Info">
+    <div class="Basic_Info" *ngIf="!Basic_Info">
         <div class="row">
             <div class="Basic_Info_head">
                 <h2>{{'contactHome.application_head' | translate}}</h2>
@@ -91,29 +91,38 @@
                 <mat-form-field>
                     <mat-label>{{'applicationApply.want-to-apply.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option (click)="applyOptions($event)" id="1" value="Language Course">{{'applicationApply.want-to-apply.Language-Course' | translate}}</mat-option>
-                        <mat-option (click)="applyOptions($event)" id="2" value="Foundation Course">{{'applicationApply.want-to-apply.Foundation-Course' | translate}}</mat-option>
-                        <mat-option (click)="applyOptions($event)" id="3" value="Bachelor Degree">{{'applicationApply.want-to-apply.Bachelor-Degree' | translate}}</mat-option>
-                        <mat-option (click)="applyOptions($event)" id="4" value="Master Degree">{{'applicationApply.want-to-apply.Master-Degree' | translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="1"
+                            value="Language Course">{{'applicationApply.want-to-apply.Language-Course' |
+                            translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="2"
+                            value="Foundation Course">{{'applicationApply.want-to-apply.Foundation-Course' |
+                            translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="3"
+                            value="Bachelor Degree">{{'applicationApply.want-to-apply.Bachelor-Degree' |
+                            translate}}</mat-option>
+                        <mat-option (click)="applyOptions($event)" id="4"
+                            value="Master Degree">{{'applicationApply.want-to-apply.Master-Degree' |
+                            translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div class="application-btn d-flex align-items-end justify-content-end">
                 <button (click)="want_to_apply_back()" class="back">{{'applicationApply.back' | translate}}</button>
-                <button (click)="applyNext()" class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                <button (click)="applyNext()"
+                    class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
                     translate}}</button>
             </div>
         </div>
     </div>
     <div class="Language_Course" *ngIf="Language_Course">
         <div class="Language_Course_head">
-            <h2>{{'applicationApply.Language-Course.head'  | translate}}</h2>
-            <p>{{'applicationApply.Language-Course.caption'  | translate}}</p>
+            <h2>{{'applicationApply.Language-Course.head' | translate}}</h2>
+            <p>{{'applicationApply.Language-Course.caption' | translate}}</p>
         </div>
         <div class="Language_Course_form">
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.startcourse'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.startcourse' | translate}}</mat-label>
                     <input matInput [matDatepicker]="picker">
                     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
@@ -121,13 +130,13 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.weeks'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.weeks' | translate}}</mat-label>
                     <input matInput>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.hourperweek.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.hourperweek.label' | translate}}</mat-label>
                     <mat-select>
                         <mat-option value="15">15</mat-option>
                         <mat-option value="20">20</mat-option>
@@ -138,363 +147,487 @@
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.accommodation.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.accommodation.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.one'  | translate}}</mat-option>
-                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.two'  | translate}}</mat-option>
-                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.three'  | translate}}</mat-option>
-                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.four'  | translate}}</mat-option>
-                        <mat-option value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.five'  | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.one'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.two'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.three'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.four'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.accommodation.label'  | translate}}">{{'applicationApply.Language-Course.accommodation.five'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option (click)="airportTransfaer($event)" id="1" value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}</mat-option>
-                        <mat-option (click)="airportTransfaer($event)" id="2" value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="1"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div *ngIf="trasferWayes">
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}</mat-option>
-                        <mat-option value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <mat-form-field>
-                <mat-label>{{'applicationApply.Language-Course.arrival-airport'  | translate}}</mat-label>
+                <mat-label>{{'applicationApply.Language-Course.arrival-airport' | translate}}</mat-label>
                 <input matInput>
-              </mat-form-field>
+            </mat-form-field>
             <div>
             </div>
             <div class="application-btn d-flex align-items-end justify-content-end">
                 <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
-                <button (click)="applyNext()" class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                <button (click)="applyNext()"
+                    class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
                     translate}}</button>
             </div>
         </div>
     </div>
     <div class="Foundation_Course" *ngIf="Foundation_Course">
         <div class="Foundation_Course_head">
-            <h2>{{'applicationApply.Foundation-Course.head'  | translate}}</h2>
-            <p>{{'applicationApply.Foundation-Course.head'  | translate}}</p>
+            <h2>{{'applicationApply.Foundation-Course.head' | translate}}</h2>
+            <p>{{'applicationApply.Foundation-Course.head' | translate}}</p>
         </div>
         <div class="Foundation_Course_form">
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.degree'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.degree' | translate}}</mat-label>
                     <input matInput>
-                  </mat-form-field>
+                </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.startcourse.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.startcourse.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option id="1"  value="{{'applicationApply.Foundation-Course.startcourse.January'  | translate}}">{{'applicationApply.Foundation-Course.startcourse.January'  | translate}}</mat-option>
-                        <mat-option id="2" value="{{'applicationApply.Foundation-Course.startcourse.March'  | translate}} ">{{'applicationApply.Foundation-Course.startcourse.March'  | translate}}</mat-option>
-                        <mat-option id="3"  value="{{'applicationApply.Foundation-Course.startcourse.June'  | translate}} ">{{'applicationApply.Foundation-Course.startcourse.June'  | translate}}</mat-option>
-                        <mat-option id="4" value="{{'applicationApply.Foundation-Course.startcourse.September'  | translate}}  ">{{'applicationApply.Foundation-Course.startcourse.September'  | translate}}</mat-option>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.startcourse.January'  | translate}}">{{'applicationApply.Foundation-Course.startcourse.January'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.startcourse.March'  | translate}} ">{{'applicationApply.Foundation-Course.startcourse.March'
+                            | translate}}</mat-option>
+                        <mat-option id="3"
+                            value="{{'applicationApply.Foundation-Course.startcourse.June'  | translate}} ">{{'applicationApply.Foundation-Course.startcourse.June'
+                            | translate}}</mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.startcourse.September'  | translate}}  ">{{'applicationApply.Foundation-Course.startcourse.September'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.terms.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.terms.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option id="1"  value="{{'applicationApply.Foundation-Course.terms.one'  | translate}}">{{'applicationApply.Foundation-Course.terms.one'  | translate}}</mat-option>
-                        <mat-option id="2" value="{{'applicationApply.Foundation-Course.terms.two'  | translate}} ">{{'applicationApply.Foundation-Course.terms.two'  | translate}}</mat-option>
-                        <mat-option id="3"  value="{{'applicationApply.Foundation-Course.terms.three'  | translate}} ">{{'applicationApply.Foundation-Course.terms.three'  | translate}}</mat-option>
-                        <mat-option id="4" value="{{'applicationApply.Foundation-Course.terms.four'  | translate}}  ">{{'applicationApply.Foundation-Course.terms.four'  | translate}}</mat-option>
-                        <mat-option id="5"  value="{{'applicationApply.Foundation-Course.terms.five'  | translate}} ">{{'applicationApply.Foundation-Course.terms.five'  | translate}}</mat-option>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.terms.one'  | translate}}">{{'applicationApply.Foundation-Course.terms.one'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.terms.two'  | translate}} ">{{'applicationApply.Foundation-Course.terms.two'
+                            | translate}}</mat-option>
+                        <mat-option id="3"
+                            value="{{'applicationApply.Foundation-Course.terms.three'  | translate}} ">{{'applicationApply.Foundation-Course.terms.three'
+                            | translate}}</mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.terms.four'  | translate}}  ">{{'applicationApply.Foundation-Course.terms.four'
+                            | translate}}</mat-option>
+                        <mat-option id="5"
+                            value="{{'applicationApply.Foundation-Course.terms.five'  | translate}} ">{{'applicationApply.Foundation-Course.terms.five'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option (click)='IELTSCertifcate($event)' id="1"
+                            value="{{'applicationApply.Foundation-Course.ielts.yes'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)='IELTSCertifcate($event)' id="2"
+                            value="{{'applicationApply.Foundation-Course.ielts.no'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.no'
+                            | translate}}</mat-option>
 
-            <div>
-                <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.ielts.label'  | translate}}</mat-label>
-                    <mat-select>
-                        <mat-option (click)='IELTSCertifcate($event)' id="1"  value="{{'applicationApply.Foundation-Course.ielts.yes'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.yes'  | translate}}</mat-option>
-                        <mat-option (click)='IELTSCertifcate($event)' id="2" value="{{'applicationApply.Foundation-Course.ielts.no'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.no'  | translate}}</mat-option>
-            
                     </mat-select>
                 </mat-form-field>
             </div>
             <div *ngIf="IELTSNo">
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsno.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsno.label' | translate}}</mat-label>
                     <input matInput>
-                  </mat-form-field>
+                </mat-form-field>
             </div>
             <div *ngIf="IELTSScores">
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsyes.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsyes.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option id="1"  value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'  | translate}}</mat-option>
-                        <mat-option id="2" value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'  | translate}} </mat-option>
-                        <mat-option id="3"  value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'  | translate}} </mat-option>
-                        <mat-option id="4" value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'  | translate}}    ">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'  | translate}}     </mat-option>
-                        <mat-option id="5"  value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'  | translate}}  </mat-option>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'
+                            | translate}} </mat-option>
+                        <mat-option id="3"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'
+                            | translate}} </mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'  | translate}}    ">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'
+                            | translate}} </mat-option>
+                        <mat-option id="5"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'
+                            | translate}} </mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.graduated.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.graduated.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option  id="1"  value="{{'applicationApply.Foundation-Course.graduated.yes'  | translate}} ">{{'applicationApply.Foundation-Course.graduated.yes'  | translate}}</mat-option>
-                        <mat-option  id="2" value="{{'applicationApply.Foundation-Course.graduated.no'  | translate}} ">{{'applicationApply.Foundation-Course.graduated.no'  | translate}}</mat-option>
-            
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.graduated.yes'  | translate}} ">{{'applicationApply.Foundation-Course.graduated.yes'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.graduated.no'  | translate}} ">{{'applicationApply.Foundation-Course.graduated.no'
+                            | translate}}</mat-option>
+
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Foundation-Course.accommodation.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.accommodation.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option  id="1"  value="{{'applicationApply.Foundation-Course.accommodation.label'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.label'  | translate}}</mat-option>
-                        <mat-option  id="2" value="{{'applicationApply.Foundation-Course.accommodation.label'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.label'  | translate}}</mat-option>
-            
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.accommodation.yes'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.yes'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.accommodation.no'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.no'
+                            | translate}}</mat-option>
+
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option (click)="airportTransfaer($event)" id="1" value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}</mat-option>
-                        <mat-option (click)="airportTransfaer($event)" id="2" value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="1"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div *ngIf="trasferWayes">
                 <mat-form-field>
-                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label'  | translate}}</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}</mat-option>
-                        <mat-option value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <mat-form-field>
-                <mat-label>{{'applicationApply.Language-Course.arrival-airport'  | translate}}</mat-label>
+                <mat-label>{{'applicationApply.Language-Course.arrival-airport' | translate}}</mat-label>
                 <input matInput>
-              </mat-form-field>
-              <div class="application-btn d-flex align-items-end justify-content-end">
+            </mat-form-field>
+            <div class="application-btn d-flex align-items-end justify-content-end">
                 <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
                 <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
                     translate}}</button>
             </div>
-
-
         </div>
     </div>
     <div class="Bachelor_Degree" *ngIf="Bachelor_Degree">
         <div class="Bachelor_Degree_head">
-            <h2>Bachelor Degree</h2>
-            <p>Please, complete the following inquiries.</p>
+            <h2>{{'applicationApply.Bachelor-Degree.label' | translate}}</h2>
+            <p>{{'applicationApply.Bachelor-Degree.label' | translate}}</p>
         </div>
         <div class="Bachelor_Degree_form">
-<div>
-    <mat-form-field>
-        <mat-label>What is the name of the degree you would like to Study ?</mat-label>
-        <input matInput>
-      </mat-form-field>
-</div>
-<div>
-    <mat-form-field>
-        <mat-label>When you would like to start your course ?</mat-label>
-        <mat-select>
-            <mat-option   value="January">January</mat-option>
-            <mat-option  value="September">September</mat-option>
-
-        </mat-select>
-    </mat-form-field>
-</div>
-<div>
-    <mat-form-field>
-        <mat-label>What level of study have you completed or currently studding?</mat-label>
-        <mat-select>
-            <mat-option   value="Foundation ">Foundation </mat-option>
-            <mat-option  value="Diploma ">Diploma </mat-option>
-
-        </mat-select>
-    </mat-form-field>
-</div>
-<div>
-    <mat-form-field>
-        <mat-label>Do you currently have an IELTS Certificate ?</mat-label>
-        <mat-select>
-            <mat-option (click)='IELTSCertifcate($event)' id="1"  value="yes ">yes</mat-option>
-            <mat-option (click)='IELTSCertifcate($event)' id="2" value="no ">no</mat-option>
-
-        </mat-select>
-    </mat-form-field>
-</div>
-<div *ngIf="IELTSNo">
-    <mat-form-field>
-        <mat-label>If it is NOT IELTS ، please mention the English Certifcate you have hold and scores ?</mat-label>
-        <input matInput>
-      </mat-form-field>
-</div>
-<div *ngIf="IELTSScores">
-    <mat-form-field>
-        <mat-label>what is your Scores please ?</mat-label>
-        <mat-select>
-            <mat-option id="1"  value="Overall">Overall</mat-option>
-            <mat-option id="2" value="Writing">Writing </mat-option>
-            <mat-option id="3"  value="Reading">Reading </mat-option>
-            <mat-option id="4" value="Speaking">Speaking </mat-option>
-            <mat-option id="5"  value="Listening">Listening  </mat-option>
-        </mat-select>
-    </mat-form-field>
-</div>
-<div>
-    <mat-form-field>
-        <mat-label>Would like to book university accommodation with your foundation Studies ?</mat-label>
-        <mat-select>
-            <mat-option  id="1"  value="yes ">yes</mat-option>
-            <mat-option  id="2" value="no ">no</mat-option>
-
-        </mat-select>
-    </mat-form-field>
-</div>
-<div>
-    <mat-form-field>
-        <mat-label>Would you like to have airport transfer ?</mat-label>
-        <mat-select>
-            <mat-option (click)="airportTransfaer($event)" id="1" value="yes">yes</mat-option>
-            <mat-option (click)="airportTransfaer($event)" id="2" value="no">no</mat-option>
-
-        </mat-select>
-    </mat-form-field>
-</div>
-<div *ngIf="trasferWayes">
-    <mat-form-field>
-        <mat-label>would like one way or two way transfer  ?</mat-label>
-        <mat-select>
-            <mat-option value="Oneway">Oneway</mat-option>
-            <mat-option value="Both ways">Both ways</mat-option>
-        </mat-select>
-    </mat-form-field>
-</div>
-<mat-form-field>
-    <mat-label> Name of arrival Airport ?</mat-label>
-    <input matInput>
-  </mat-form-field>
-
-  <div class="application-btn d-flex align-items-end justify-content-end">
-    <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
-    <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
-        translate}}</button>
-</div>
-        </div>
-    </div>
-    <div class="Master_Degree" *ngIf="Master_Degree">
-        <div class="Master_Degree_head">
-            <h2>Master Degree</h2>
-            <p>Please, complete the following inquiries.</p>
-        </div>
-        <div class="Master_Degree_form">
             <div>
                 <mat-form-field>
-                    <mat-label>What is the name of the degree you would like to Study ?</mat-label>
+                    <mat-label>{{'applicationApply.Bachelor-Degree.degree' | translate}}</mat-label>
                     <input matInput>
-                  </mat-form-field>
+                </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>When you would like to start your course ?</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.startcourse.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option   value="January">January</mat-option>
-                        <mat-option  value="September">September</mat-option>
-            
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.startcourse.January'  | translate}}">{{'applicationApply.Foundation-Course.startcourse.January'
+                            | translate}}</mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.startcourse.September'  | translate}}  ">{{'applicationApply.Foundation-Course.startcourse.September'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Have you completed your bachelor degree ?</mat-label>
+                    <mat-label>{{'applicationApply.Bachelor-Degree.studding.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option   value="yes">yes</mat-option>
-                        <mat-option  value="no">no</mat-option>
-                        <mat-option  value="Currently studding ">Currently studding </mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Bachelor-Degree.studding.Foundation'  | translate}}">{{'applicationApply.Bachelor-Degree.studding.Foundation'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Bachelor-Degree.studding.Diploma'  | translate}}">{{'applicationApply.Bachelor-Degree.studding.Diploma'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Do you currently have an IELTS Certificate ?</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option (click)='IELTSCertifcate($event)' id="1"  value="yes ">yes</mat-option>
-                        <mat-option (click)='IELTSCertifcate($event)' id="2" value="no ">no</mat-option>
-            
+                        <mat-option (click)='IELTSCertifcate($event)' id="1"
+                            value="{{'applicationApply.Foundation-Course.ielts.yes'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)='IELTSCertifcate($event)' id="2"
+                            value="{{'applicationApply.Foundation-Course.ielts.no'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.no'
+                            | translate}}</mat-option>
+
                     </mat-select>
                 </mat-form-field>
             </div>
             <div *ngIf="IELTSNo">
                 <mat-form-field>
-                    <mat-label>If it is NOT IELTS ، please mention the English Certifcate you have hold and scores ?</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsno.label' | translate}}</mat-label>
                     <input matInput>
-                  </mat-form-field>
+                </mat-form-field>
             </div>
             <div *ngIf="IELTSScores">
                 <mat-form-field>
-                    <mat-label>what is your Scores please ?</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsyes.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option id="1"  value="Overall">Overall</mat-option>
-                        <mat-option id="2" value="Writing">Writing </mat-option>
-                        <mat-option id="3"  value="Reading">Reading </mat-option>
-                        <mat-option id="4" value="Speaking">Speaking </mat-option>
-                        <mat-option id="5"  value="Listening">Listening  </mat-option>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'
+                            | translate}} </mat-option>
+                        <mat-option id="3"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'
+                            | translate}} </mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'  | translate}}    ">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'
+                            | translate}} </mat-option>
+                        <mat-option id="5"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'
+                            | translate}} </mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Would like to book university accommodation with your foundation Studies ?</mat-label>
+                    <mat-label>{{'applicationApply.Foundation-Course.accommodation.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option  id="1"  value="yes ">yes</mat-option>
-                        <mat-option  id="2" value="no ">no</mat-option>
-            
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.accommodation.yes'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.yes'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.accommodation.no'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.no'
+                            | translate}}</mat-option>
+
                     </mat-select>
                 </mat-form-field>
             </div>
             <div>
                 <mat-form-field>
-                    <mat-label>Would you like to have airport transfer ?</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option (click)="airportTransfaer($event)" id="1" value="yes">yes</mat-option>
-                        <mat-option (click)="airportTransfaer($event)" id="2" value="no">no</mat-option>
-            
+                        <mat-option (click)="airportTransfaer($event)" id="1"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <div *ngIf="trasferWayes">
                 <mat-form-field>
-                    <mat-label>would like one way or two way transfer  ?</mat-label>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label' | translate}}</mat-label>
                     <mat-select>
-                        <mat-option value="Oneway">Oneway</mat-option>
-                        <mat-option value="Both ways">Both ways</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'
+                            | translate}}</mat-option>
                     </mat-select>
                 </mat-form-field>
             </div>
             <mat-form-field>
-                <mat-label> Name of arrival Airport ?</mat-label>
+                <mat-label>{{'applicationApply.Language-Course.arrival-airport' | translate}}</mat-label>
                 <input matInput>
-              </mat-form-field>
-              <div class="application-btn d-flex align-items-end justify-content-end">
+            </mat-form-field>
+
+            <div class="application-btn d-flex align-items-end justify-content-end">
                 <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
                 <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
                     translate}}</button>
             </div>
-
         </div>
+    </div>
+    <div class="Master_Degree" *ngIf="!Master_Degree">
+        <div class="Master_Degree_head">
+            <h2>{{'applicationApply.Master_Degree.head' | translate}}</h2>
+            <p>{{'applicationApply.Master_Degree.label' | translate}}</p>
+        </div>
+        <div class="Master_Degree_form">
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Master_Degree.degree' | translate}}</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Foundation-Course.startcourse.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.startcourse.January'  | translate}}">{{'applicationApply.Foundation-Course.startcourse.January'
+                            | translate}}</mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.startcourse.September'  | translate}}  ">{{'applicationApply.Foundation-Course.startcourse.September'
+                            | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Master_Degree.completed.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option
+                            value="{{'applicationApply.Master_Degree.completed.Yes'  | translate}}">{{'applicationApply.Master_Degree.completed.Yes'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Master_Degree.completed.no'  | translate}}">{{'applicationApply.Master_Degree.completed.no'
+                            | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option (click)='IELTSCertifcate($event)' id="1"
+                            value="{{'applicationApply.Foundation-Course.ielts.yes'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)='IELTSCertifcate($event)' id="2"
+                            value="{{'applicationApply.Foundation-Course.ielts.no'  | translate}} ">{{'applicationApply.Foundation-Course.ielts.no'
+                            | translate}}</mat-option>
 
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="IELTSNo">
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsno.label' | translate}}</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div *ngIf="IELTSScores">
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Foundation-Course.ielts.ieltsyes.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.overall'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Writing'
+                            | translate}} </mat-option>
+                        <mat-option id="3"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Reading'
+                            | translate}} </mat-option>
+                        <mat-option id="4"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'  | translate}}    ">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Speaking'
+                            | translate}} </mat-option>
+                        <mat-option id="5"
+                            value="{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'  | translate}}">{{'applicationApply.Foundation-Course.ielts.ieltsyes.Listening'
+                            | translate}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Foundation-Course.accommodation.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option id="1"
+                            value="{{'applicationApply.Foundation-Course.accommodation.yes'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.yes'
+                            | translate}}</mat-option>
+                        <mat-option id="2"
+                            value="{{'applicationApply.Foundation-Course.accommodation.no'  | translate}} ">{{'applicationApply.Foundation-Course.accommodation.no'
+                            | translate}}</mat-option>
+
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option (click)="airportTransfaer($event)" id="1"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.yes'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.yes'
+                            | translate}}</mat-option>
+                        <mat-option (click)="airportTransfaer($event)" id="2"
+                            value="{{'applicationApply.Language-Course.airport-trasfer.no'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer.no'
+                            | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="trasferWayes">
+                <mat-form-field>
+                    <mat-label>{{'applicationApply.Language-Course.airport-trasfer-yes.label' | translate}}</mat-label>
+                    <mat-select>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.one'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.one'
+                            | translate}}</mat-option>
+                        <mat-option
+                            value="{{'applicationApply.Language-Course.airport-trasfer-yes.two'  | translate}}">{{'applicationApply.Language-Course.airport-trasfer-yes.two'
+                            | translate}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <mat-label>{{'applicationApply.Language-Course.arrival-airport' | translate}}</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <div class="application-btn d-flex align-items-end justify-content-end">
+                <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
+                <button class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
+                    translate}}</button>
+            </div>
+        </div>
     </div>
 </section>
