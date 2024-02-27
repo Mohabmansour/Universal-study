@@ -1,5 +1,5 @@
 <section [dir]="(_LangService.direction$ | async)">
-    <div class="Basic_Info" *ngIf="!Basic_Info">
+    <div class="Basic_Info" *ngIf="Basic_Info">
         <div class="row">
             <div class="Basic_Info_head">
                 <h2>{{'contactHome.application_head' | translate}}</h2>
@@ -499,7 +499,7 @@
             </div>
         </div>
     </div>
-    <div class="Master_Degree" *ngIf="!Master_Degree">
+    <div class="Master_Degree" *ngIf="Master_Degree">
         <div class="Master_Degree_head">
             <h2>{{'applicationApply.Master_Degree.head' | translate}}</h2>
             <p>{{'applicationApply.Master_Degree.label' | translate}}</p>

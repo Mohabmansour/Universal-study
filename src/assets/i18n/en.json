@@ -10,6 +10,8 @@
     "langDropdown-position": "drowdown-meneu"
   },
   "header": {
+    "class":"header-style",
+    "apply":"Apply Now",
     "head": "Your first choice for education in the <span class='highlight'>Uk</span> <br> & worldwide",
     "caption": "Universal Study offers professional education counseling service to <br> Middle Eastern and international students applying to study in <br> universities, colleges and Language school worldwide."
   },
@@ -311,7 +313,7 @@
       "caption2span": "WhatsApp ",
       "caption2": " 0044 (0) 7922571797",
       "caption3span": "Email",
-      "caption3": "info@universalstudy.co.uk"
+      "caption3": "admissions@universalstudy.co.uk"
     },
     "location2": {
       "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
@@ -320,7 +322,7 @@
       "caption2span": "WhatsApp ",
       "caption2": " 00965 6701500",
       "caption3span": "Email",
-      "caption3": "info@universalstudy.co.uk"
+      "caption3": "admissions@universalstudy.co.uk"
     },
     "location3": {
       "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
@@ -329,7 +331,7 @@
       "caption2span": "WhatsApp ",
       "caption2": " 00965 6701500",
       "caption3span": "Email",
-      "caption3": "info@universalstudy.co.uk"
+      "caption3": "admissions@universalstudy.co.uk"
     }
   },
   "footer": {
@@ -366,7 +368,7 @@
       "Services3": "Mob ",
       "Services3span": " +44 (0) 7922 571797",
       "Services4": "Email ",
-      "Services4span": " info@universalstudy.co.uk"
+      "Services4span": " admissions@universalstudy.co.uk"
     }
   },
   "applicationApply":{

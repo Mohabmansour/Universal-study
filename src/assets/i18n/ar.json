@@ -11,6 +11,8 @@
   },
 
   "header": {
+    "class":"header-style-ar",
+    "apply":"قدم الان",
     "head": "خيارك الأول للتعليم في المملكة المتحدة وجميع أنحاء العالم",
     "caption": "تقدم الدراسة العالمية خدمة الاستشارات التعليمية المهنية لطلاب الشرق الأوسط والطلاب الدوليين المتقدمين للدراسة في الجامعات والكليات ومدارس اللغات في جميع أنحاء العالم."
   },
@@ -314,7 +316,7 @@
       "caption2span": "واتساب: ",
       "caption2": " 0044 (0) 7922571797",
       "caption3span": "بريد إلكتروني:",
-      "caption3": "info@universalstudy.co.uk"
+      "caption3": "admissions@universalstudy.co.uk"
     },
     "location2": {
       "head": "الكويت حولي مجمع العصفور شارع العثمان مقابل متحف بيت العثمان الدور السادس",
@@ -323,7 +325,7 @@
       "caption2span": "واتساب ",
       "caption2": " 00965 6701500",
       "caption3span": "بريد إلكتروني",
-      "caption3": "info@universalstudy.co.uk"
+      "caption3": "admissions@universalstudy.co.uk"
     },
     "location3": {
       "head": "الكويت العاصمة المنطقة الشرقية قطعة 4 شارع جابر مبارك مجمع دسمان / ريم مرزوق محمد غانم الدور الأول وحدة رقم 5",
@@ -332,7 +334,7 @@
       "caption2span": "واتساب: ",
       "caption2": " 00965 6701500",
       "caption3span": "بريد إلكتروني:",
-      "caption3": "info@universalstudy.co.uk"
+      "caption3": "admissions@universalstudy.co.uk"
     }
   },
   "footer": {
@@ -370,7 +372,7 @@
       "Services3": "موبايل:",
       "Services3span": " +44 (0) 7922 571797",
       "Services4": "البريد الالكتروني ",
-      "Services4span": " info@universalstudy.co.uk"
+      "Services4span": " admissions@universalstudy.co.uk"
     }
   },
   "applicationApply":{

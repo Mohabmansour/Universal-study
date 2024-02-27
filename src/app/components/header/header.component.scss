@@ -1,45 +1,30 @@
-header {
+.header-style {
     padding: 0px 50px;
     padding-left: 70px;
     // margin-top: 79px;
-
     height: 100vh;
     background-color: #EDFDFD;
-
     .item {
-
-
-
         h1 {
             //styleName: Bold/48px B;
             font-family: Poppins;
             font-size: 50px;
             font-weight: 700;
-
             .highlight {
                 display: none !important;
             }
-
-
         }
-
         P {
             //styleName: Regular/14px R;
             font-family: Poppins;
             font-size: 14px;
             font-weight: 400;
-
-
-
-
         }
-
         button {
             &:hover {
                 font-size: 12px;
                 transition: all ease-in-out 0.3s;
             }
-
             width: 158px;
             height: 46px;
             top: 347px;
@@ -57,44 +42,157 @@ header {
             font-weight: 500;
             border: none;
             transition: all ease-in-out 0.3s;
-
-
             color: rgba(255, 255, 255, 1);
 
         }
     }
-
     .item2 {
         main {
             height: 550px;
         }
     }
-
-
     // .carousel {
     //     .carousel-control-next {
     //         position: absolute;
     //         left: 0px;
     //         top: 60%;
     //     }
-
     //     .carousel-control-prev {
     //         position: absolute;
     //         left: -75px;
     //         top: 60%;
     //     }
-
     //     .carousel-item {
     //         .highlight {
     //             display: none !important;
     //         }
-
     //         .item {
 
     //             // & {
     //             //     width: 80%;
     //             // }
 
+
+    //             h1 {
+
+    //                 span {
+    //                     color: blue !important;
+    //                 }
+
+    //                 color: var(--Basic-Black, #14191B);
+    //                 /* Bold/48px B */
+    //                 font-family: Poppins;
+    //                 font-size: 48px;
+    //                 font-style: normal;
+    //                 font-weight: 700;
+    //                 line-height: 64px;
+    //                 /* 133.333% */
+    //             }
+
+    //             p {
+
+
+    //                 color: var(--Basic-Black, #14191B);
+
+    //                 /* Regular/14px R */
+    //                 font-family: Poppins;
+    //                 font-size: 14px;
+    //                 font-style: normal;
+    //                 font-weight: 400;
+    //                 line-height: normal;
+    //             }
+    //         }
+
+    //         .item2 {
+    //             main {
+    //                 svg {
+    //                     width: 110% !important;
+    //                 }
+
+    //                 height: 596.312px;
+    //                 width: 100%;
+    //             }
+    //         }
+    //     }
+
+    //     .carousel-control-next,
+    //     .carousel-control-prev {}
+
+    // }
+}
+.header-style-ar {
+    padding: 0px 50px;
+    padding-right: 100px;
+    // margin-top: 79px;
+    height: 100vh;
+    background-color: #EDFDFD;
+    .item {
+        h1 {
+            //styleName: Bold/48px B;
+            font-family: Poppins;
+            font-size: 50px;
+            font-weight: 700;
+            .highlight {
+                display: none !important;
+            }
+        }
+        P {
+            //styleName: Regular/14px R;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        button {
+            &:hover {
+                font-size: 12px;
+                transition: all ease-in-out 0.3s;
+            }
+            width: 158px;
+            height: 46px;
+            top: 347px;
+            right: 64px;
+            padding: 12px,
+            24px,
+            12px,
+            24px;
+            border-radius: 8px;
+            gap: 10px;
+            background-color: rgba(36, 119, 137, 1);
+            //styleName: Medium/14px M;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            transition: all ease-in-out 0.3s;
+            color: rgba(255, 255, 255, 1);
+
+        }
+    }
+    .item2 {
+        main {
+            height: 550px;
+        }
+    }
+    // .carousel {
+    //     .carousel-control-next {
+    //         position: absolute;
+    //         left: 0px;
+    //         top: 60%;
+    //     }
+    //     .carousel-control-prev {
+    //         position: absolute;
+    //         left: -75px;
+    //         top: 60%;
+    //     }
+    //     .carousel-item {
+    //         .highlight {
+    //             display: none !important;
+    //         }
+    //         .item {
+
+    //             // & {
+    //             //     width: 80%;
+    //             // }
 
 
     //             h1 {
