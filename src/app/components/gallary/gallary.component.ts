@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LangService } from 'src/assets/services/lang.service';
 
 @Component({
   selector: 'app-gallary',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallary.component.scss'],
 })
 export class GallaryComponent {
+  constructor(public _LangService:LangService){
+
+  }
   p: number = 1;
   gallary: string[] = [
     '../../../assets/images/gallary/Property 1=1.png',

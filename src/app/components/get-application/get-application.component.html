@@ -1,5 +1,5 @@
 <section [dir]="(_LangService.direction$ | async)">
-    <div class="Basic_Info" *ngIf="Basic_Info">
+    <div class="Basic_Info" *ngIf="!Basic_Info">
         <div class="row">
             <div class="Basic_Info_head">
                 <h2>{{'contactHome.application_head' | translate}}</h2>
@@ -629,5 +629,27 @@
                     translate}}</button>
             </div>
         </div>
+    </div>
+
+    <div class="paypal" *ngIf="paypal">
+        <div class="paypal_head">
+            <img src="../../../assets/images/paypall-logo.svg" alt="">
+            <p>pay with Paypal, Complete the Form.</p>
+        </div>
+
+    </div>
+    <div class="success text-center ">
+        <div class="Advisory-img position-relative " style="height: 100%;">
+            <main lottie [options]="options"></main>
+        </div>
+        <div>
+            <h5>Congratulations!</h5>
+            <p>Your Application is successfully Placed</p>
+            <span>Wait a call from Universal Study Time within 48 hr,</span>
+        </div>
+        <div class="Explore_more">
+            <button>Explore More</button>
+        </div>
+
     </div>
 </section>

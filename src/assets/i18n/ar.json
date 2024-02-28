@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "class":"bg-body-tertiaryenar",
     "Home": "الرئيسية",
     "Services": "الخدمات",
     "About": "عننا",

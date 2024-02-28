@@ -10,7 +10,6 @@ import { LangService } from 'src/assets/services/lang.service';
 })
 export class HeaderComponent {
   constructor(private _LangService:LangService){
-
   }
   options: AnimationOptions = {
     path: '../../../assets/images/Hero Section Image.json',

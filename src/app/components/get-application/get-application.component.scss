@@ -157,6 +157,68 @@ section {
         }
 
     }
+    .paypal{
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 1);
+        padding: 50px;
+        width: 70%;
+        margin: auto;
+        border-radius: 8px;
+
+        .paypal_head{
+&{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 120px;
+    height: 30px;
+}
+                p {
+                    //styleName: Regular/12px R;
+                    font-family: Poppins;
+                    font-size: 12px;
+                    font-weight: 400;
+
+                }
+        }
+    }
+    .success{
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 1);
+        padding: 50px;
+        width: 50%;
+        margin: auto;
+        border-radius: 8px;
+        main{
+            svg{
+                border-radius: 50% !important;
+            }
+            width: 190px !important;
+            height: 190px;
+            border-radius: 50% !important;
+            margin: auto;
+          
+        }
+        .Explore_more{
+            button{
+                width: 212px;
+height: 46px;
+background-color: rgba(36, 119, 137, 1);
+border-radius: 8px;
+//styleName: Medium/14px M;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+color: #fff;
+border: none ;
+
+
+
+            }
+        }
+
+    }
 }
 .name-field {
     .inputimg {
@@ -759,21 +821,22 @@ section {
             background-color: rgba(36, 119, 137, 1);
             //styleName: Medium/14px M;
 font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
 
 
 
 
-    }
-    .back{
-        width:99px;
-height:45px;
-border-radius: 8px;
-border: 1px solid rgba(155, 175, 181, 1);
-background-color: transparent;
+}
+
+.back {
+    width: 99px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid rgba(155, 175, 181, 1);
+    background-color: transparent;
 
 
-    }
+}
 }

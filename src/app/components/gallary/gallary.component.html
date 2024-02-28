@@ -1,6 +1,6 @@
-<section>
+<section >
     <div class="container-fluid">
-        <div class="{{'gallary.headClass' | translate}}">
+        <div class="{{'gallary.headClass' | translate}}" [dir]="(_LangService.direction$ | async)">
             <h1>{{'gallary.head' | translate}}</h1>
             <p>{{'gallary.caption' | translate}}</p>
         </div>

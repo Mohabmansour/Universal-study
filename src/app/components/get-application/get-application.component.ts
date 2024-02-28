@@ -1,17 +1,21 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { LangService } from 'src/assets/services/lang.service';
-
+import { AnimationOptions } from 'ngx-lottie';
 @Component({
   selector: 'app-get-application',
   templateUrl: './get-application.component.html',
   styleUrls: ['./get-application.component.scss'],
 })
 export class GetApplicationComponent {
+  options: AnimationOptions = {
+    path: '../../../assets/images/success.json',
+  };
   constructor(public _LangService: LangService , @Inject(DOCUMENT) private document: Document) {}
   Basic_Info: boolean = true;
   want_to_apply: boolean = false;
   Language_Course: boolean = false;
+  paypal: boolean = false;
   trasferWayes: boolean = false;
   applyNextValue:any;
   IELTSScores: boolean = false;

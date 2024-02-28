@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "class":"bg-body-tertiaryen",
     "Home": "Home",
     "Services": "Services",
     "About": "About",
