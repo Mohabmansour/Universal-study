@@ -29,13 +29,14 @@ section {
                 font-family: Poppins;
                 font-size: 12px;
                 font-weight: 400;
-  
+
 
             }
         }
 
     }
-    .want-to-apply{
+
+    .want-to-apply {
         width: 70%;
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
@@ -58,80 +59,90 @@ section {
                 font-family: Poppins;
                 font-size: 12px;
                 font-weight: 400;
-  
+
 
             }
         }
     }
-    .Language_Course{
+
+    .Language_Course {
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
         background: rgba(255, 255, 255, 1);
         padding: 50px;
         width: 70%;
         margin: auto;
         border-radius: 8px;
-        .Language_Course_head{
+
+        .Language_Course_head {
             h2 {
-                    font-family: Poppins;
-                    font-size: 24px;
-                    font-weight: 700;
-                }
-                p {
-                    font-family: Poppins;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+            }
         }
     }
-    .Bachelor_Degree{
+
+    .Bachelor_Degree {
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
         background: rgba(255, 255, 255, 1);
         padding: 50px;
         width: 70%;
         margin: auto;
         border-radius: 8px;
-        .Bachelor_Degree_head{
+
+        .Bachelor_Degree_head {
             h2 {
-                    //styleName: Bold/24px B;
-                    font-family: Poppins;
-                    font-size: 24px;
-                    font-weight: 700;
+                //styleName: Bold/24px B;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
 
-                }
-                p {
-                    //styleName: Regular/12px R;
-                    font-family: Poppins;
-                    font-size: 12px;
-                    font-weight: 400;
+            }
 
-                }
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+
+            }
         }
     }
-    .Foundation_Course{
+
+    .Foundation_Course {
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
         background: rgba(255, 255, 255, 1);
         padding: 50px;
         width: 70%;
         margin: auto;
         border-radius: 8px;
-        .Foundation_Course_head{
+
+        .Foundation_Course_head {
             h2 {
-                    //styleName: Bold/24px B;
-                    font-family: Poppins;
-                    font-size: 24px;
-                    font-weight: 700;
-  
-                }
-                p {
-                    //styleName: Regular/12px R;
-                    font-family: Poppins;
-                    font-size: 12px;
-                    font-weight: 400;
-    
-                }
+                //styleName: Bold/24px B;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
+
+            }
+
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+
+            }
         }
     }
-    .Master_Degree{
+
+    .Master_Degree {
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
         background: rgba(255, 255, 255, 1);
         padding: 50px;
@@ -139,25 +150,27 @@ section {
         margin: auto;
         border-radius: 8px;
 
-        .Master_Degree_head{
+        .Master_Degree_head {
             h2 {
-                    //styleName: Bold/24px B;
-                    font-family: Poppins;
-                    font-size: 24px;
-                    font-weight: 700;
+                //styleName: Bold/24px B;
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 700;
 
-                }
-                p {
-                    //styleName: Regular/12px R;
-                    font-family: Poppins;
-                    font-size: 12px;
-                    font-weight: 400;
+            }
 
-                }
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+
+            }
         }
 
     }
-    .paypal{
+
+    .paypal {
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
         background: rgba(255, 255, 255, 1);
         padding: 50px;
@@ -165,53 +178,86 @@ section {
         margin: auto;
         border-radius: 8px;
 
-        .paypal_head{
-&{
-    display: flex;
-    flex-direction: column;
-}
-img{
-    width: 120px;
-    height: 30px;
-}
-                p {
-                    //styleName: Regular/12px R;
-                    font-family: Poppins;
-                    font-size: 12px;
-                    font-weight: 400;
+        .paypal_head {
+            & {
+                display: flex;
+                flex-direction: column;
+            }
 
-                }
+            img {
+                width: 120px;
+                height: 30px;
+            }
+
+            p {
+                //styleName: Regular/12px R;
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 400;
+
+            }
         }
     }
-    .success{
+
+    .success {
         box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
         background: rgba(255, 255, 255, 1);
         padding: 50px;
         width: 50%;
         margin: auto;
         border-radius: 8px;
-        main{
-            svg{
+
+        ::ng-deep   main {
+            ::ng-deep   svg {
                 border-radius: 50% !important;
             }
+
             width: 190px !important;
             height: 190px;
             border-radius: 50% !important;
             margin: auto;
-          
+
         }
-        .Explore_more{
-            button{
+
+        h5 {
+            //styleName: Bold/20px B;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(0, 181, 186, 1);
+            margin-top: 30px;
+
+        }
+
+        span {
+            //styleName: Regular/12px R;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(20, 25, 27, 1);
+        }
+
+        p {
+            //styleName: Bold/16px B;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 12px;
+        }
+
+        .Explore_more {
+            button {
                 width: 212px;
-height: 46px;
-background-color: rgba(36, 119, 137, 1);
-border-radius: 8px;
-//styleName: Medium/14px M;
-font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-color: #fff;
-border: none ;
+                height: 46px;
+                background-color: rgba(36, 119, 137, 1);
+                border-radius: 8px;
+                //styleName: Medium/14px M;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                border: none;
+                margin-top: 30px;
 
 
 
@@ -220,6 +266,7 @@ border: none ;
 
     }
 }
+
 .name-field {
     .inputimg {
         position: absolute;
@@ -227,6 +274,7 @@ border: none ;
         left: 10PX;
         z-index: 99 !important;
     }
+
     // ::ng-deep .mat-mdc-text-field-focused {
     //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
     //     --mdc-outlined-text-field-outline-width: 2px !important;
@@ -236,17 +284,21 @@ border: none ;
     // }
     input {
         text-indent: 40px;
+
         &::placeholder {
             margin-left: 40px;
         }
     }
+
     ::ng-deep .mdc-floating-label {
         padding-left: 35px !important;
     }
+
     ::ng-deep .mdc-floating-label--float-above {
         padding-left: 50px !important;
     }
 }
+
 .name-field-ar {
     .inputimg {
         position: absolute;
@@ -269,11 +321,12 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
+
     }
 
 
 }
+
 .email-field {
     .inputimg {
         position: absolute;
@@ -300,6 +353,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .email-field-ar {
     .inputimg {
         position: absolute;
@@ -324,9 +378,10 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
+
     }
 }
+
 .Current-Address-field {
     .inputimg {
         position: absolute;
@@ -369,6 +424,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .Current-Address-field-ar {
     .inputimg {
         position: absolute;
@@ -410,9 +466,10 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
+
     }
 }
+
 .phone-field {
     .inputimg {
         position: absolute;
@@ -437,6 +494,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .phone-field-ar {
     .inputimg {
         position: absolute;
@@ -459,9 +517,10 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
+
     }
 }
+
 .country-field {
     .inputimg {
         position: absolute;
@@ -510,6 +569,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .country-field-ar {
     .inputimg {
         position: absolute;
@@ -555,9 +615,10 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
+
     }
 }
+
 .city-field {
     .inputimg {
         position: absolute;
@@ -605,6 +666,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .city-field-ar {
     .inputimg {
         position: absolute;
@@ -650,9 +712,10 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
+
     }
 }
+
 .Postal-Code-field {
     // ::ng-deep .mat-mdc-text-field-focused {
     //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
@@ -665,6 +728,7 @@ border: none ;
 
 
 }
+
 .Postal-Code-field-ar {
     // ::ng-deep .mat-mdc-text-field-focused {
     //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
@@ -698,6 +762,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .Subject-field {
     .inputimg {
         position: absolute;
@@ -722,6 +787,7 @@ border: none ;
         padding-left: 50px !important;
     }
 }
+
 .Subject-field-ar {
     .inputimg {
         position: absolute;
@@ -744,21 +810,21 @@ border: none ;
 
     ::ng-deep .mdc-floating-label--float-above {
         padding-right: 50px !important;
-      
     }
 }
+
 .textarea {
     textarea {
         height: 264px !important;
         // background-color: rgba(155, 175, 181, 0.1) !important;
         border: none !important;
-
     }
 
     .form-control:focus {
         box-shadow: none !important
     }
 }
+
 .textarea-ar {
     textarea {
         height: 264px !important;
@@ -770,73 +836,37 @@ border: none ;
         box-shadow: none !important
     }
 }
+
 ::ng-deep .mat-mdc-form-field {
-
-    // ::ng-deep .mdc-notched-outline {
-    //     background-color: rgba(155, 175, 181, 0.1);
-    //     border-radius: 8px !important;
-    //     padding: 0px;
-    // }
-
-    // ::ng-deep .mdc-text-field--outlined {
-    //     --mdc-outlined-text-field-focus-outline-width: 0px !important;
-    //     --mdc-outlined-text-field-outline-width: 0px !important;
-    //     --mdc-outlined-text-field-container-shape: 0px !important;
-
-    // }
-
-    // ::ng-deep .mdc-notched-outline--notched {
-    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
-    //     --mdc-outlined-text-field-outline-width: 2px !important;
-    //     --mdc-outlined-text-field-container-shape: 2px !important;
-    //     --mdc-outlined-text-field-focus-outline-color: rgba(128, 128, 128, 0.5) !important;
-    //     border-radius: 8px !important;
-
-    // }
-
-
-    // ::ng-deep .mat-form-field-underline {
-    //     transition: border-color 0.3s !important;
-    //     /* Add a transition for a smooth effect */
-    // }
-
-    // ::ng-deep .mat-focused .mat-form-field-underline {
-    //     border-color: red !important;
-    //     /* Specify the color you want when the input is focused */
-    // }
-
     width: 100%;
-
 }
 
-.application-btn{
-    &{
+.application-btn {
+    & {
         text-align: right;
     }
-    .next{
+
+    .next {
         width: 158px;
-            height: 46px;
-            border-radius: 8px;
-            border: none;
-            background-color: rgba(36, 119, 137, 1);
-            //styleName: Medium/14px M;
-font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+        height: 46px;
+        border-radius: 8px;
+        border: none;
+        background-color: rgba(36, 119, 137, 1);
+        //styleName: Medium/14px M;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+
+    }
+
+    .back {
+        width: 99px;
+        height: 45px;
+        border-radius: 8px;
+        border: 1px solid rgba(155, 175, 181, 1);
+        background-color: transparent;
 
 
-
-
-}
-
-.back {
-    width: 99px;
-    height: 45px;
-    border-radius: 8px;
-    border: 1px solid rgba(155, 175, 181, 1);
-    background-color: transparent;
-
-
-}
+    }
 }

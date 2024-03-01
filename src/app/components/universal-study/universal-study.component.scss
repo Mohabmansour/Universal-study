@@ -93,3 +93,102 @@ section {
 
     }
 }
+
+
+@media screen and (max-width: 768px){
+    section {
+        margin-top: 50pxpx;
+    
+        .universal-header {
+            h1 {
+                color: var(--Basic-Black, #14191B);
+    
+                /* Bold/36px B */
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 50px;
+                margin-left: 55px;
+                position: relative;
+                /* 138.889% */
+    
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 35px;
+                    height: 2px;
+                    background-color: #00B5BA;
+                    top: 23px;
+                    left: -50px;
+    
+                }
+            }
+    
+    
+        }
+    
+        .universal-header-ar {
+            h1 {
+                color: var(--Basic-Black, #14191B);
+                /* Bold/36px B */
+                font-family: Poppins;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 50px;
+                margin-right: 55px;
+                position: relative;
+    
+                /* 138.889% */
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 35px;
+                    height: 2px;
+                    background-color: #00B5BA;
+                    top: 20px;
+                    right: -50px;
+                }
+            }
+    
+    
+        }
+    
+        .universal {
+            main {
+                width: 112px;
+                height: 112px;
+            }
+    
+            margin-top: 70px;
+    
+            h6 {
+                color: #000;
+                text-align: start;
+    
+                /* Bold/16px B */
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 24px;
+            }
+    
+            p {
+                color: var(--Dark-W1, #223338);
+    
+                /* Regular/12px R */
+                font-family: Poppins;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin-top: 16px;
+                /* 166.667% */
+            }
+    
+        }
+    }
+}

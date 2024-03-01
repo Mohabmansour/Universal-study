@@ -27,7 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 
 import { ContactComponent } from './components/contact/contact.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { GetApplicationComponent } from './components/get-application/get-application.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -68,12 +68,14 @@ export function playerFactory() {
     BrowserModule,
     MatIconModule,
     MatInputModule,
+    ReactiveFormsModule,
     MatSelectModule,
     FormsModule,
     MatFormFieldModule,
     LottieModule.forRoot({ player: playerFactory }),
     AppRoutingModule,
     NgxPaginationModule,
+    HttpClientModule,
     MatMomentDateModule,
     TranslateModule.forRoot({
       loader: {

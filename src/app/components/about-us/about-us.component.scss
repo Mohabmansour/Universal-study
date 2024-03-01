@@ -84,11 +84,16 @@ section {
 // Styles for mobile
 @media only screen and (max-width: 767px) {
     section {
+        &{
+            margin-top: 50px !important;
+        }
         .about-caption {
             & {
                 padding: 0px !important;
             }
-
+p{
+    margin-top: 10px !important;
+}
             h4 {
                 font-size: 22px
             }

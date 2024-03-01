@@ -13,8 +13,8 @@
   "header": {
     "class":"header-style",
     "apply":"Apply Now",
-    "head": "Your first choice for education in the <span class='highlight'>Uk</span> <br> & worldwide",
-    "caption": "Universal Study offers professional education counseling service to <br> Middle Eastern and international students applying to study in <br> universities, colleges and Language school worldwide."
+    "head": "Your first choice for education in the <span class='highlight'>Uk</span>  & worldwide",
+    "caption": "Universal Study offers professional education counseling service to  Middle Eastern and international students applying to study in  universities, colleges and Language school worldwide."
   },
   "services": {
     "Services": "Services",
@@ -271,7 +271,7 @@
     },
     "city-field":{
       "class":"city-field",
-      "name":"country"
+      "name":"city"
     },
     "Current-Address-field":{
       "class":"Current-Address-field",
@@ -557,5 +557,11 @@
         "no":"no"
       }
     }
+  },
+  "paypal":{
+    "head":"Congratulations!",
+    "caption":"Your Application is successfully Placed",
+    "time":"Wait a call from Universal Study Time within 48 hr",
+    "explore":"Explore More"
   }
 }

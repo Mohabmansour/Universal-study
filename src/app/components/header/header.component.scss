@@ -51,74 +51,7 @@
             height: 550px;
         }
     }
-    // .carousel {
-    //     .carousel-control-next {
-    //         position: absolute;
-    //         left: 0px;
-    //         top: 60%;
-    //     }
-    //     .carousel-control-prev {
-    //         position: absolute;
-    //         left: -75px;
-    //         top: 60%;
-    //     }
-    //     .carousel-item {
-    //         .highlight {
-    //             display: none !important;
-    //         }
-    //         .item {
 
-    //             // & {
-    //             //     width: 80%;
-    //             // }
-
-
-    //             h1 {
-
-    //                 span {
-    //                     color: blue !important;
-    //                 }
-
-    //                 color: var(--Basic-Black, #14191B);
-    //                 /* Bold/48px B */
-    //                 font-family: Poppins;
-    //                 font-size: 48px;
-    //                 font-style: normal;
-    //                 font-weight: 700;
-    //                 line-height: 64px;
-    //                 /* 133.333% */
-    //             }
-
-    //             p {
-
-
-    //                 color: var(--Basic-Black, #14191B);
-
-    //                 /* Regular/14px R */
-    //                 font-family: Poppins;
-    //                 font-size: 14px;
-    //                 font-style: normal;
-    //                 font-weight: 400;
-    //                 line-height: normal;
-    //             }
-    //         }
-
-    //         .item2 {
-    //             main {
-    //                 svg {
-    //                     width: 110% !important;
-    //                 }
-
-    //                 height: 596.312px;
-    //                 width: 100%;
-    //             }
-    //         }
-    //     }
-
-    //     .carousel-control-next,
-    //     .carousel-control-prev {}
-
-    // }
 }
 .header-style-ar {
     padding: 0px 50px;
@@ -173,86 +106,95 @@
             height: 550px;
         }
     }
-    // .carousel {
-    //     .carousel-control-next {
-    //         position: absolute;
-    //         left: 0px;
-    //         top: 60%;
-    //     }
-    //     .carousel-control-prev {
-    //         position: absolute;
-    //         left: -75px;
-    //         top: 60%;
-    //     }
-    //     .carousel-item {
-    //         .highlight {
-    //             display: none !important;
-    //         }
-    //         .item {
 
-    //             // & {
-    //             //     width: 80%;
-    //             // }
-
-
-    //             h1 {
-
-    //                 span {
-    //                     color: blue !important;
-    //                 }
-
-    //                 color: var(--Basic-Black, #14191B);
-    //                 /* Bold/48px B */
-    //                 font-family: Poppins;
-    //                 font-size: 48px;
-    //                 font-style: normal;
-    //                 font-weight: 700;
-    //                 line-height: 64px;
-    //                 /* 133.333% */
-    //             }
-
-    //             p {
-
-
-    //                 color: var(--Basic-Black, #14191B);
-
-    //                 /* Regular/14px R */
-    //                 font-family: Poppins;
-    //                 font-size: 14px;
-    //                 font-style: normal;
-    //                 font-weight: 400;
-    //                 line-height: normal;
-    //             }
-    //         }
-
-    //         .item2 {
-    //             main {
-    //                 svg {
-    //                     width: 110% !important;
-    //                 }
-
-    //                 height: 596.312px;
-    //                 width: 100%;
-    //             }
-    //         }
-    //     }
-
-    //     .carousel-control-next,
-    //     .carousel-control-prev {}
-
-    // }
 }
 
-// .header-animation main {
-//     width: 100%;
-//     height: 599px;
-// }
+br {
+    display: none;
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 768px) {
+    .mobile-br{
+        display: none !important;
+    }
+    .header-style ,.header-style-ar{
+        .mobile-br{
+            display: none !important;
+        }
+        padding: 0px 15px;
+        height: auto !important;
+        padding-top: 10% !important;
+        .item{
+            &{
+                text-align: center;
+            }
+            h1 {
+                //styleName: Bold/48px B;
+                font-family: Poppins;
+                font-size: 35px;
+                font-weight: 700;
+                .highlight {
+                    display: none !important;
+                }
+            }
+            br{
+                display:none !important ;
+            }
+            P {
+                //styleName: Regular/14px R;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
 
-// .carousel-indicators {
-//     display: none !important;
-// }
+                br{
+                    display: none !important;
+                }
+            }
+        }
 
-// .carousel-control-next-icon,
-// .carousel-control-prev-icon {
-//     background-color: red;
-// }
+    }
+  }
+
+
+//   @media screen and (min-width: 600px) {
+//     .mobile-br{
+//         display: none !important;
+//     }
+//     .header-style ,.header-style-ar{
+//         .mobile-br{
+//             display: none !important;
+//         }
+//         padding: 0px 15px;
+//         height: auto !important;
+//         padding-top: 10% !important;
+//         .item{
+//             &{
+//                 text-align: center;
+//             }
+//             h1 {
+//                 //styleName: Bold/48px B;
+//                 font-family: Poppins;
+//                 font-size: 35px;
+//                 font-weight: 700;
+//                 .highlight {
+//                     display: none !important;
+//                 }
+//             }
+//             br{
+//                 display:none !important ;
+//             }
+//             P {
+//                 //styleName: Regular/14px R;
+//                 font-family: Poppins;
+//                 font-size: 14px;
+//                 font-weight: 400;
+
+//                 br{
+//                     display: none !important;
+//                 }
+//             }
+//         }
+
+//     }
+//   }
