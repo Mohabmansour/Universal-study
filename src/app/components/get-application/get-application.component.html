@@ -1,5 +1,5 @@
 <section [dir]="(_LangService.direction$ | async)">
-    <div class="Basic_Info" *ngIf="!Basic_Info">
+    <div class="Basic_Info" *ngIf="Basic_Info">
         <div class="row">
             <div class="Basic_Info_head">
                 <h2>{{'contactHome.application_head' | translate}}</h2>
@@ -631,7 +631,7 @@
         </div>
     </div>
 
-    <div class="paypal" *ngIf="!paypal">
+    <div class="paypal" *ngIf="paypal">
         <div class="paypal_head">
             <img src="../../../assets/images/paypall-logo.svg" alt="">
             <p>pay with Paypal, Complete the Form.</p>
