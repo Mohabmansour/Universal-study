@@ -195,17 +195,12 @@
 padding: 0px 20px !important;
     }
 }
-@media only screen and (min-width: 600px){
-    .bg-body-tertiary {
-        & {
-            border-bottom: 1px solid rgba(155, 175, 181, 0.25);
-            background: var(--Basic-White, #FFF) !important;
-            padding: 15px 0px !important;
-        }
-    }
-    .lang-div {
-        display: flex ;
-        justify-content: center;
-        align-items:center ;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 831px) and (max-width:1200px) {
+    .dropdownArrow{
+display: flex;
+justify-content: space-between;
+align-items: center;
     }
 }

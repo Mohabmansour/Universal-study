@@ -1,5 +1,5 @@
 <header class="d-flex justify-content-center align-items-center {{'header.class' | translate}}">
-    <div class="row pt-5">
+    <div class="row pt-5 row_res_desktop">
         <div class="col-lg-5 col-md-5 col-sm-12 d-flex justify-content-start align-items-center">
             <div class="item">
                 <h1 [innerHTML]="'header.head' | translate"></h1>
@@ -15,6 +15,26 @@
         <div class="col-lg-7 col-md-7 col-sm-12 ">
             <div class="item2">
                 <main lottie [options]="options" (animationCreated)="animationCreated($event)"></main>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5 row_res">
+
+        <div class="col-lg-7 col-md-7 col-sm-12 ">
+            <div class="item2">
+                <main lottie [options]="options" (animationCreated)="animationCreated($event)"></main>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12 d-flex justify-content-start align-items-center">
+            <div class="item">
+                <h1 [innerHTML]="'header.head' | translate"></h1>
+                <p [innerHTML]="'header.caption' | translate"></p>
+
+                <div class="mt-3">
+                    <button (click)="routing('/Get-Application')">
+                        {{'header.apply' | translate}}
+                    </button>
+                </div>
             </div>
         </div>
     </div>

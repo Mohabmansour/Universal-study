@@ -1,6 +1,27 @@
 <section class="container-fluid">
-    <div class="row">
+    <div class="row row_res_desktop">
+        <div class="col-lg-6 order-md-2 order-sm-2 d-flex justify-content-center align-items-center">
+            <div class="{{'chooseUs.class'| translate}} pe-5">
+                <div>
+                    <h4>{{"chooseUs.head" | translate}}</h4>
+                    <p>{{"chooseUs.caption1" | translate}}</p>
+                    <p>{{"chooseUs.caption2" | translate}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 order-md-1 order-sm-1">
+            <div class="about">
+                <main lottie [options]="options"></main>
+            </div>
+        </div>
+    </div>
+    <div class="row row_res">
 
+        <div class="col-lg-6 order-md-1 order-sm-1">
+            <div class="about">
+                <main lottie [options]="options"></main>
+            </div>
+        </div>
 
         <div class="col-lg-6 order-md-2 order-sm-2 d-flex justify-content-center align-items-center">
             <div class="{{'chooseUs.class'| translate}} pe-5">
@@ -10,14 +31,6 @@
                     <p>{{"chooseUs.caption2" | translate}}</p>
                 </div>
             </div>
-
         </div>
-        <div class="col-lg-6 order-md-1 order-sm-1">
-            <div class="about">
-                <main lottie [options]="options"></main>
-            </div>
-
-        </div>
-
     </div>
 </section>

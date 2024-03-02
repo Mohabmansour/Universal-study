@@ -1,4 +1,7 @@
 section {
+    .row_res{
+        display:none ;
+    }
     & {
         margin: 79px 0px;
     }
@@ -110,6 +113,14 @@ section {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 320px) and (max-width:900px) {
     section {
+        .row_res_desk{
+            display: none !important;
+
+        }
+        .row_res{
+            display: block !important;
+
+        }
         .img-mob-res{
             img{
          display: none !important;
@@ -129,7 +140,7 @@ section {
     
             .academic-header-caption {
                 h1 {
-                    font-size: 36px;
+                    font-size: 30px;
                     font-weight: 700;
                     line-height: 50px;
                     letter-spacing: 0em;

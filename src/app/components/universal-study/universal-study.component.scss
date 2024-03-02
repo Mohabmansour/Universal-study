@@ -95,9 +95,12 @@ section {
 }
 
 
-@media screen and (max-width: 768px){
+@media only screen and (min-width: 320px) and (max-width: 830px){
     section {
-        margin-top: 50pxpx;
+        .universal{
+            margin-top: 20px !important;
+        }
+        margin-top: 50px;
     
         .universal-header {
             h1 {
@@ -105,7 +108,7 @@ section {
     
                 /* Bold/36px B */
                 font-family: Poppins;
-                font-size: 20px;
+                font-size: 18px !important;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 50px;
@@ -192,3 +195,5 @@ section {
         }
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 830px){}

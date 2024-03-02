@@ -25,6 +25,7 @@ import { GallaryComponent } from './components/gallary/gallary.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { NgxPayPalModule } from 'ngx-paypal';
 
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -70,6 +71,7 @@ export function playerFactory() {
     MatInputModule,
     ReactiveFormsModule,
     MatSelectModule,
+    NgxPayPalModule,
     FormsModule,
     MatFormFieldModule,
     LottieModule.forRoot({ player: playerFactory }),
