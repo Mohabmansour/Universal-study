@@ -33,11 +33,10 @@
                         <div class="position-relative {{'contactHome.country-field.class'  | translate}}">
                             <mat-form-field>
                                 <img class="inputimg" src="../../../assets/images/flag.svg" alt="">
-
                                 <!-- <mat-label>Favorite food</mat-label> -->
                                 <mat-select placeholder="{{'contactHome.country-field.name'  | translate}}">
-                                    <mat-option *ngFor="let food of foods ; let track = index"
-                                        [value]="food.value">{{food.viewValue}}</mat-option>
+                                    <mat-option *ngFor="let country of countries ; let track = index"
+                                        [value]="country.name">{{country.name}}</mat-option>
                                 </mat-select>
                             </mat-form-field>
                         </div>
@@ -46,13 +45,12 @@
                     <div class="col-lg-6">
                         <div class="position-relative {{'contactHome.city-field.class'  | translate}}">
                             <img class="inputimg" src="../../../assets/images/city-icon.svg" alt="">
-                            <mat-form-field>
-                                <!-- <mat-label>Favorite food</mat-label> -->
-                                <mat-select placeholder="{{'contactHome.city-field.name'  | translate}}">
-                                    <mat-option *ngFor="let food of foods ; let track = index"
-                                        [value]="food.value">{{food.viewValue}}</mat-option>
-                                </mat-select>
-                            </mat-form-field>
+
+                            
+                    <mat-form-field appearance="fill">
+                        <mat-label>{{'contactHome.city-field.name'  | translate}}</mat-label>
+                        <input matInput>
+                    </mat-form-field>
                         </div>
 
                     </div>
@@ -201,9 +199,7 @@
             </div>
             <div class="application-btn d-flex align-items-end justify-content-end">
                 <button (click)="optionsBack()" class="back">{{'applicationApply.back' | translate}}</button>
-                <button (click)="applyNext()"
-                    class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' |
-                    translate}}</button>
+                <button (click)="applyNext()" class="next {{'applicationApply.margin'  | translate}}">{{'applicationApply.next' | translate}}</button>
             </div>
         </div>
     </div>
@@ -630,16 +626,12 @@
             </div>
         </div>
     </div>
-
     <div class="paypal" *ngIf="paypal">
         <div class="paypal_head">
             <img src="../../../assets/images/paypall-logo.svg" alt="">
             <p>pay with Paypal, Complete the Form.</p>
         </div>
-
             <ngx-paypal [config]="payPalConfig"></ngx-paypal>
-
-
     </div>
     <div class="success text-center" *ngIf="paypal">
         <div class="Advisory-img position-relative " style="height: 100%;">

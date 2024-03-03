@@ -327,3 +327,53 @@ section {
 
     }
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width:900px) {
+    section{
+          
+        .academic-header {
+            background-color: rgba(237, 253, 253, 1);
+            padding: 40px ;
+    
+            .academic-header-caption {
+                h1 {
+                    font-size: 30px !important;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0em;
+                    color: rgba(20, 25, 27, 1);
+                }
+    
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    margin-top: 15px;
+                }
+    
+                .line {
+display: none !important;
+                }
+    
+                .apply-now {
+                    button {
+                        width: 158px;
+                        height: 46px;
+                        padding: 12px, 24px, 12px, 24px;
+                        border-radius: 8px;
+                        border: none;
+                        ;
+                        background-color: rgba(36, 119, 137, 1);
+                        //styleName: Medium/14px M;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 1);
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

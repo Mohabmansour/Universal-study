@@ -1,5 +1,9 @@
 <section>
     <div class="container-fluid">
+        <div class="success_toaster" *ngIf="successToaster">
+            <img src="../../../assets/images/correct.svg" alt="">
+            <p class="m-0">Data sent successFully</p>
+        </div>
 <form action="" [formGroup]="contactForm">
     <div class="row">
         <div class="{{'contactHome.headClass'  | translate}} mb-4">
@@ -38,19 +42,23 @@
 
                             <!-- <mat-label>Favorite food</mat-label> -->
                             <mat-select formControlName="country" placeholder="{{'contactHome.country-field.name'  | translate}}">
-                                <mat-option *ngFor="let food of foods ; let track = index"
-                                    [value]="food.value">{{food.viewValue}}</mat-option>
+                                <mat-option *ngFor="let country of countries ; let track = index"
+                                    [value]="country.name">{{country.name}}</mat-option>
                             </mat-select>
                         </mat-form-field>
                     </div>
                     <div class="position-relative {{'contactHome.city-field.class'  | translate}}">
                         <img class="inputimg" src="../../../assets/images/city-icon.svg" alt="">
-                        <mat-form-field>
-                            <mat-select formControlName="city" placeholder="{{'contactHome.city-field.name'  | translate}}">
+                
+                            <!-- <mat-select  placeholder="{{'contactHome.city-field.name'  | translate}}">
                                 <mat-option *ngFor="let food of foods ; let track = index"
                                     [value]="food.value">{{food.viewValue}}</mat-option>
-                            </mat-select>
-                        </mat-form-field>
+                            </mat-select> -->
+                            <mat-form-field  appearance="fill">
+                                <mat-label>{{'contactHome.city-field.name'  | translate}}</mat-label>
+                                <input formControlName="city" matInput>
+                            </mat-form-field>
+                  
                     </div>
                     <div class="position-relative {{'contactHome.Current-Address-field.class' | translate}}">
                         <img class="inputimg" src="../../../assets/images/addres.svg" alt="">
@@ -106,9 +114,10 @@
                 </div>
             </div>
             <div class="prefered-send">
-                <button (click)="sendData()">{{'contactHome.preferred.send' | translate}}</button>
+                <button [ngClass]="this.contactForm.invalid ? 'disable-btn':''"  (click)="sendData()">{{'contactHome.preferred.send' | translate}}</button>
             </div>
         </div>
+
     </div>
 </form>
     </div>

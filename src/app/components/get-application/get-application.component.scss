@@ -717,18 +717,7 @@ section {
     }
 }
 
-.Postal-Code-field {
-    // ::ng-deep .mat-mdc-text-field-focused {
-    //     --mdc-outlined-text-field-focus-outline-width: 2px !important;
-    //     --mdc-outlined-text-field-outline-width: 2px !important;
-    //     --mdc-outlined-text-field-container-shape: 2px !important;
-    //     --mdc-outlined-text-field-focus-outline-color: red !important;
-    //     border-radius: 8px !important;
-    // }
 
-
-
-}
 
 .Postal-Code-field-ar {
     // ::ng-deep .mat-mdc-text-field-focused {
@@ -870,4 +859,29 @@ section {
 
 
     }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 830px){
+    section{
+        .Basic_Info,
+        .want-to-apply,
+        .Language_Course,
+        .Foundation_Course,
+        .Bachelor_Degree,
+        .Master_Degree,
+        .paypal,
+        .success
+        {
+            width: 90% !important;
+            padding: 15px !important;
+
+        }
+
+        .want-to-apply{
+            h2{
+                font-size: 22px !important;
+            }
+        }
+    }
+
 }
