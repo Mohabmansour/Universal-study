@@ -21,8 +21,10 @@
   "services": {
     "Services": "الخدمات",
     "Services-c": "services-caption-ar",
+    "services-class":"service-ar",
     "learn-more-img": "learn-more-img-ar",
     "button-style": "button-style-ar",
+    "arrow":"../../../assets/images/arrow-left.svg",
     "acadimic": {
       "header": "الدراسات الأكاديمية",
       "caption": "نحن نمثل مجموعة كبيرة من الجامعات والمؤسسات في جميع أنحاء العالم.",
@@ -311,20 +313,20 @@
   },
   "location": {
     "location1": {
-      "head": "12 شارع المحطة، إيستبورن،,شرق ساسكس، BN21 4RG,المملكة المتحدة",
-      "caption1span": "هاتف ",
-      "caption1": "0044 (0) 7922571797",
-      "caption2span": "واتساب: ",
-      "caption2": " 0044 (0) 7922571797",
-      "caption3span": "بريد إلكتروني:",
-      "caption3": "admissions@universalstudy.co.uk"
-    },
-    "location2": {
-      "head": "الكويت حولي مجمع العصفور شارع العثمان مقابل متحف بيت العثمان الدور السادس",
+      "head": "الكويت ، حوالي ، مجمع العصفور ، شارع العثمان ، مقابل متحف  بيت العثمان ، الدور السادس       ",
       "caption1span": "هاتف ",
       "caption1": "00965 6701500",
-      "caption2span": "واتساب ",
+      "caption2span": "واتساب: ",
       "caption2": " 00965 6701500",
+      "caption3span": "بريد إلكتروني:",
+      "caption3": "admissions@universalstudy.co.uK"
+    },
+    "location2": {
+      "head":"الکویت ، العاصمه ، المنطقة الشرق، القطعة ٤،  شارع جابر مبارك ، مجمع دسمان / ريم مرزوق محمد غانم ، دور الاولي ، رقم الوحدة ٥ ",
+      "caption1span": "هاتف ",
+      "caption1": "00965 67015200",
+      "caption2span": "واتساب ",
+      "caption2": " 00965 67015200",
       "caption3span": "بريد إلكتروني",
       "caption3": "admissions@universalstudy.co.uk"
     },
@@ -524,6 +526,9 @@
         "no":"no"
       }
     }
+  },
+  "paypalApi":{
+    "caption":"الدفع باستخدام Paypal، أكمل النموذج."
   },
   "paypal":{
     "head":"تهانينا!",

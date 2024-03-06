@@ -19,8 +19,10 @@
   "services": {
     "Services": "Services",
     "Services-c": "services-caption",
+    "services-class":"service",
     "learn-more-img": "learn-more-img",
     "button-style": "button-style",
+    "arrow":"../../../assets/images/arrow-r.svg",
     "acadimic": {
       "header": "Academic Studies",
       "caption": "We represent a wide range of Universities and Institutions worldwide.",
@@ -296,10 +298,7 @@
       "margin":"ms-3",
       "margin-option":"ms-2",
       "send":"send"
-
     }
-
-
   },
   "gallary":{
     "headClass":"gallary-header",
@@ -557,6 +556,10 @@
         "no":"no"
       }
     }
+  },
+  "paypalApi":{
+    "caption":"pay with Paypal, Complete the Form."
+
   },
   "paypal":{
     "head":"Congratulations!",

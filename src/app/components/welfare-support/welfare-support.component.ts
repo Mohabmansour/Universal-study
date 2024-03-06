@@ -22,5 +22,9 @@ export class WelfareSupportComponent {
   animationCreated(animationItem: AnimationItem): void {
     console.log(animationItem);
   }
+
+  applicationRouter(){
+    this._LangService.scrollToTop('Get-Application')
+  }
   constructor(public _LangService: LangService) {}
 }

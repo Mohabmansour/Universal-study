@@ -6,6 +6,7 @@ import { ShortTermComponent } from './components/short-term/short-term.component
 import { AccommodationComponent } from './components/accommodation/accommodation.component';
 import { WelfareSupportComponent } from './components/welfare-support/welfare-support.component';
 import { GetApplicationComponent } from './components/get-application/get-application.component';
+import { UkSercicesComponent } from './components/uk-sercices/uk-sercices.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,9 +22,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      initialNavigation: 'enabledBlocking',
-    }),
-  ],
+      initialNavigation: 'enabledBlocking',anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -629,7 +629,7 @@
     <div class="paypal" *ngIf="paypal">
         <div class="paypal_head">
             <img src="../../../assets/images/paypall-logo.svg" alt="">
-            <p>pay with Paypal, Complete the Form.</p>
+            <p>{{'paypalApi.caption' | translate}}</p>
         </div>
             <ngx-paypal [config]="payPalConfig"></ngx-paypal>
     </div>

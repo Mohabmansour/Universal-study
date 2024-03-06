@@ -1,13 +1,13 @@
 <app-header [dir]="(_LangService.direction$ | async)"></app-header>
 <div class="px-5  project-con" >
-    <app-uk-sercices [dir]="(_LangService.direction$ | async)"></app-uk-sercices>
-    <app-about-us [dir]="(_LangService.direction$ | async)"></app-about-us>
+    <app-uk-sercices  [dir]="(_LangService.direction$ | async)"></app-uk-sercices>
+    <app-about-us  [dir]="(_LangService.direction$ | async)"></app-about-us>
     <app-choose-us [dir]="(_LangService.direction$ | async)"></app-choose-us>
     <app-universal-study [dir]="(_LangService.direction$ | async)"></app-universal-study>
     <app-location [dir]="(_LangService.direction$ | async)"></app-location>
 
     <app-gallary></app-gallary>
-    <app-contact [dir]="(_LangService.direction$ | async)"></app-contact>
+    <app-contact id="contact" [dir]="(_LangService.direction$ | async)"></app-contact>
 
 </div>
 <app-our-numbers class="mb-5" [dir]="(_LangService.direction$ | async)"></app-our-numbers>
