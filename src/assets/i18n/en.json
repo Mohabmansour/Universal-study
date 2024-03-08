@@ -306,30 +306,31 @@
     "caption":"Our team, see our events and activities with our clients and partners."
   },
   "location": {
+    "map":"go to map",
     "location1": {
-      "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
+      "head": "Universal Study Office , Sixth Floor , Al-Asfoor Complex , Al-Othman Street , Block 3 , Opposite of House of Al-Othman , Hawalli City , Kuwait",
       "caption1span": "Tel ",
-      "caption1": "0044 (0) 7922571797",
+      "caption1": "009656701500",
       "caption2span": "WhatsApp ",
-      "caption2": " 0044 (0) 7922571797",
+      "caption2": " 009656701500",
       "caption3span": "Email",
       "caption3": "admissions@universalstudy.co.uk"
     },
     "location2": {
-      "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
+      "head": "Universal Study Office , Buliding Number 1 , First Floor , Al-Dasman Complex , Al-Jaber Mubarak Street , Block 4, , Kuwwit City ( Al-Sharq ), Kuwait",
       "caption1span": "Tel ",
-      "caption1": "00965 6701500",
+      "caption1": "0096567015200",
       "caption2span": "WhatsApp ",
-      "caption2": " 00965 6701500",
+      "caption2": " 0096567015200",
       "caption3span": "Email",
       "caption3": "admissions@universalstudy.co.uk"
     },
     "location3": {
       "head": "12 Station Street, Eastbourne, East Sussex, BN21 4RG United Kingdom",
       "caption1span": "Tel ",
-      "caption1": "00965 6701500",
+      "caption1": "004407922571797",
       "caption2span": "WhatsApp ",
-      "caption2": " 00965 6701500",
+      "caption2": " 004407922571797",
       "caption3span": "Email",
       "caption3": "admissions@universalstudy.co.uk"
     }
@@ -559,7 +560,6 @@
   },
   "paypalApi":{
     "caption":"pay with Paypal, Complete the Form."
-
   },
   "paypal":{
     "head":"Congratulations!",

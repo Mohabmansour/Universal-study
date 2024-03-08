@@ -1,4 +1,6 @@
+import { LangService } from 'src/assets/services/lang.service';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-location',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./location.component.scss']
 })
 export class LocationComponent {
+  constructor(public _LangService:LangService){
+
+  }
 
 }
