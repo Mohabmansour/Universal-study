@@ -361,6 +361,13 @@ footer {
 @media only screen and (max-width: 767px) {
     footer {
         background: url(../../../assets/images/World.png) top #14191B;
+        padding: 12px !important;
+        .copy-right{
+            margin-top: 50px !important;
+            p{
+                font-size: 14px !important;
+            }
+        }
 
     }
 }

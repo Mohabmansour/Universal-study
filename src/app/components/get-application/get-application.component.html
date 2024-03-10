@@ -35,7 +35,7 @@
                                 <img class="inputimg" src="../../../assets/images/flag.svg" alt="">
                                 <!-- <mat-label>Favorite food</mat-label> -->
                                 <mat-select placeholder="{{'contactHome.country-field.name'  | translate}}">
-                                    <mat-option *ngFor="let country of countries ; let track = index"
+                                    <mat-option *ngFor="let country of _LangService.countries$ | async; let track = index"
                                         [value]="country.name">{{country.name}}</mat-option>
                                 </mat-select>
                             </mat-form-field>
@@ -365,7 +365,7 @@
     </div>
     <div class="Bachelor_Degree" *ngIf="Bachelor_Degree">
         <div class="Bachelor_Degree_head">
-            <h2>{{'applicationApply.Bachelor-Degree.label' | translate}}</h2>
+            <h2>{{'applicationApply.Bachelor-Degree.head' | translate}}</h2>
             <p>{{'applicationApply.Bachelor-Degree.label' | translate}}</p>
         </div>
         <div class="Bachelor_Degree_form">
